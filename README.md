@@ -1,0 +1,3 @@
+# Group Ed&amp;Wd
+
+Start-Up BTP en Construction métalliques (vitrage aluminium acier bois), BIM( Building Information Modelling), chriffrage construction façade (curtain walls), conduite et réalisation des travaux , Logistique et approvisionnement chantier, Planning et suivi chantier, achats( materiaux de construction, ),sous traitance (charpente metallique,  oeuvre en beton)finitions architecturaux(revetement de sol, carrelage, moquette), service de main doeuvre , location engins de chantier
