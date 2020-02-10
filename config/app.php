@@ -2,6 +2,9 @@
 
 return [
 
+    'description' => env('APP_DESCRIPTION', 'Fallback Description'),
+    'author'      => env('APP_AUTHOR', 'Fallback Author'),
+    'keywords'    => env('APP_KEYWORDS', 'laravel'),
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -225,7 +228,5 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
     ],
-
 ];
