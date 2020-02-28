@@ -30,4 +30,5 @@ Route::group(['namespace' => 'Auth','middleware' => 'web'], function () {
 
 Route::group(['namespace' => 'Site'], function () {
     Route::get('/about', 'AboutController@index')->name('about');
+    Route::get('/nos-services', 'ServicesController@index')->name('services');
 });

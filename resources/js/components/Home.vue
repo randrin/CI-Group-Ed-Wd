@@ -1,18 +1,18 @@
 <template>
     <div>
-        <Navbar/>
+        <NavbarHome/>
         <h4>Home Component</h4>
         <Footer/>
     </div>
 </template>
 
 <script>
-    import Navbar from "../layouts/Navbar";
+    import NavbarHome from "../layouts/NavbarHome";
     import Footer from "../layouts/Footer";
 
     export default {
         name: "Home",
-        components: {Navbar, Footer}
+        components: {NavbarHome, Footer}
     }
 </script>
 

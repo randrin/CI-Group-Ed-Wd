@@ -1918,10 +1918,317 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About",
+  components: {
+    Navbar: _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Contact.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Contact.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layouts/Navbar */ "./resources/js/layouts/Navbar.vue");
+/* harmony import */ var _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/Footer */ "./resources/js/layouts/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Contact",
   components: {
     Navbar: _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -1939,7 +2246,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layouts/Navbar */ "./resources/js/layouts/Navbar.vue");
+/* harmony import */ var _layouts_NavbarHome__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layouts/NavbarHome */ "./resources/js/layouts/NavbarHome.vue");
 /* harmony import */ var _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/Footer */ "./resources/js/layouts/Footer.vue");
 //
 //
@@ -1953,6 +2260,210 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Home",
+  components: {
+    NavbarHome: _layouts_NavbarHome__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Services.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layouts/Navbar */ "./resources/js/layouts/Navbar.vue");
+/* harmony import */ var _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/Footer */ "./resources/js/layouts/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Services",
   components: {
     Navbar: _layouts_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _layouts_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -2167,8 +2678,145 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Navbar"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "NavbarHome"
 });
 
 /***/ }),
@@ -37548,14 +38196,613 @@ var render = function() {
     [
       _c("Navbar"),
       _vm._v(" "),
-      _c("h4", [_vm._v("Avout Component")]),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
       _vm._v(" "),
       _c("Footer")
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "main-title block-section padd-100-top padd-100-btm bg-grey"
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+              _c("h1", { staticClass: "main-title-primary" }, [
+                _vm._v("A' Propos de nous")
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "main-title-secondary" }, [
+                _vm._v("Notre vision dans le BTP")
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "breadcrumbs" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("ol", { staticClass: "breadcrumb" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "/" } }, [_vm._v("Accueil")])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "active" }, [_vm._v("A' Propos de nous")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "site-main" }, [
+      _c("div", { staticClass: "about content-section" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("img", {
+                staticClass: "img-responsive cast-shadow",
+                attrs: { src: "/assets/site/images/img-content-04.jpg" }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 padd-40-top"
+              },
+              [
+                _c("p", [
+                  _vm._v(
+                    "Construction, Inc. traces its roots back to 2005 in Orange and since then have never looked back. With thousands of successful projects under our belt, we can proudly say that we are one."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "For more than 10 years, Construction has offered a wide range of construction services in Colorado, many other cities of United States and around the world. We strive to maintain."
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "We aim to eliminate the task of dividing your project between different architecture and construction company."
+                  )
+                ])
+              ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "team content-section bg-white", attrs: { id: "team" } },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-4" }, [
+                _c("div", { staticClass: "team-item" }, [
+                  _c("div", { staticClass: "team-item-image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/assets/site/images/img-team-01.jpg",
+                        alt: "team member"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "team-item-detail" }, [
+                      _c("h5", { staticClass: "team-item-title" }, [
+                        _vm._v("Contact")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [_c("strong", [_vm._v("Tel: 899-500-2120")])]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c("strong", [_vm._v("ceo@construction.me")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "team-item-name" }, [
+                    _vm._v("Celsea Islan")
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", { staticClass: "team-item-name" }, [_vm._v("CEO")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "team-item-role" }, [
+                    _vm._v(
+                      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-4" }, [
+                _c("div", { staticClass: "team-item" }, [
+                  _c("div", { staticClass: "team-item-image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/assets/site/images/img-team-02.jpg",
+                        alt: "team member"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "team-item-detail" }, [
+                      _c("h5", { staticClass: "team-item-title" }, [
+                        _vm._v("Contact")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [_c("strong", [_vm._v("Tel: 856-434-3457")])]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c("strong", [_vm._v("manager@construction.me")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "team-item-name" }, [
+                    _vm._v("Roberto Hongo")
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("Project Manager")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "team-item-role" }, [
+                    _vm._v(
+                      "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-4" }, [
+                _c("div", { staticClass: "team-item" }, [
+                  _c("div", { staticClass: "team-item-image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/assets/site/images/img-team-03.jpg",
+                        alt: "team member"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "team-item-detail" }, [
+                      _c("h5", { staticClass: "team-item-title" }, [
+                        _vm._v("Contact")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [_c("strong", [_vm._v("Tel: 274-724-4150")])]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c("strong", [_vm._v("architect@construction.me")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "team-item-name" }, [
+                    _vm._v("Legimin Raharjo")
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("Architect")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "team-item-role" }, [
+                    _vm._v(
+                      "Balancing a composition involves arranging both positive elements and negative space."
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "facts content-section bg-theme",
+          attrs: { id: "facts" }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                _c("div", { staticClass: "fact-item" }, [
+                  _c("span", { staticClass: "fact-item-number" }, [
+                    _c("span", { staticClass: "pe-7s-alarm icon" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "number number-alt" }, [
+                      _vm._v("10+")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("h5", { staticClass: "fact-item-info" }, [
+                    _vm._v("Year Experience")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                _c("div", { staticClass: "fact-item" }, [
+                  _c("span", { staticClass: "fact-item-number" }, [
+                    _c("span", { staticClass: "pe-7s-medal icon" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "number" }, [_vm._v("16")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h5", { staticClass: "fact-item-info" }, [
+                    _vm._v("Awards")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                _c("div", { staticClass: "fact-item" }, [
+                  _c("span", { staticClass: "fact-item-number" }, [
+                    _c("span", { staticClass: "pe-7s-tools icon" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "number" }, [_vm._v("549")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h5", { staticClass: "fact-item-info" }, [
+                    _vm._v("Projects Done")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                _c("div", { staticClass: "fact-item" }, [
+                  _c("span", { staticClass: "fact-item-number" }, [
+                    _c("span", { staticClass: "pe-7s-like2 icon" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "number" }, [_vm._v("183")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h5", { staticClass: "fact-item-info" }, [
+                    _vm._v("Great Customers")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("Navbar"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("Footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "main-title block-section padd-100-top padd-100-btm bg-grey"
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+              _c("h1", { staticClass: "main-title-primary" }, [
+                _vm._v("Nous Contactez")
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "main-title-secondary" }, [
+                _vm._v("Laissez nous un message ou appellez-nous.")
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "breadcrumbs" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("ol", { staticClass: "breadcrumb" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "/" } }, [_vm._v("Accueil")])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "active" }, [_vm._v("Nous Contactez")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "site-main" }, [
+      _c("div", { staticClass: "block-section" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "additional-info block-section bg-theme padd-20-top padd-40-btm",
+            attrs: { id: "additional-info" }
+          },
+          [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                  _c("div", { staticClass: "contact-item" }, [
+                    _c("div", { staticClass: "contact-item-icon" }, [
+                      _c("i", { staticClass: "fa fa-phone" })
+                    ]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "contact-item-title" }, [
+                      _vm._v("Phone number:")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "contact-item-info" }, [
+                      _vm._v("0-274-441-5005")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                  _c("div", { staticClass: "contact-item" }, [
+                    _c("div", { staticClass: "contact-item-icon" }, [
+                      _c("i", { staticClass: "fa fa-envelope-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "contact-item-title" }, [
+                      _vm._v("Email address:")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "contact-item-info" }, [
+                      _vm._v("hello@construction.me")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                  _c("div", { staticClass: "contact-item" }, [
+                    _c("div", { staticClass: "contact-item-icon" }, [
+                      _c("i", { staticClass: "fa fa-map-marker" })
+                    ]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "contact-item-title" }, [
+                      _vm._v("Office address:")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "contact-item-info" }, [
+                      _vm._v("5252 E Walnut Ave, Orange, CA")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+                  _c("div", { staticClass: "contact-item" }, [
+                    _c("div", { staticClass: "contact-item-icon" }, [
+                      _c("i", { staticClass: "fa fa-clock-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "contact-item-title" }, [
+                      _vm._v("Opening times:")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "contact-item-info" }, [
+                      _vm._v("Mon - Sat: 7.00 - 16:00")
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "contact block-section image-block bg-white",
+            attrs: { id: "contact" }
+          },
+          [
+            _c("div", { staticClass: "container-fluid container-no-padding" }, [
+              _c("div", { staticClass: "row row-no-margin" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "image-block-item col-md-5 col-sm-5 col-xs-12"
+                  },
+                  [
+                    _c("div", {
+                      staticClass:
+                        "map image-block-item-background image-block-item-map",
+                      attrs: {
+                        "data-lat": "-7.866315",
+                        "data-lng": "110.389574"
+                      }
+                    })
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "container clear" }, [
+              _c("div", { staticClass: "row" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm"
+                  },
+                  [
+                    _c("form", { staticClass: "contact-form" }, [
+                      _c("p", [
+                        _vm._v(
+                          "Call or submit our online form to request an estimate or for general questions about our services. We look forward to serving you!"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "contact_name" } }, [
+                          _vm._v("Full Name")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-bordered",
+                          attrs: { type: "text", id: "contact_name" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-sm-6" }, [
+                          _c("div", { staticClass: "form-group" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "form-label",
+                                attrs: { for: "contact_email" }
+                              },
+                              [_vm._v("Email Address")]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control form-bordered",
+                              attrs: { type: "email", id: "contact_email" }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-sm-6" }, [
+                          _c("div", { staticClass: "form-group" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "form-label",
+                                attrs: { for: "contact_email" }
+                              },
+                              [_vm._v("Phone Number")]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control form-bordered",
+                              attrs: { type: "email", id: "contact_email" }
+                            })
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "contact_subject" } }, [
+                          _vm._v("Subject")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control form-bordered",
+                          attrs: { type: "text", id: "contact_subject" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "form-label",
+                            attrs: { for: "contact_message" }
+                          },
+                          [_vm._v("Message")]
+                        ),
+                        _vm._v(" "),
+                        _c("textarea", {
+                          staticClass: "form-control form-bordered",
+                          attrs: { rows: "6", id: "contact_message" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button btn-square",
+                          attrs: { type: "submit" }
+                        },
+                        [_vm._v("Submit")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -37580,7 +38827,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Navbar"),
+      _c("NavbarHome"),
       _vm._v(" "),
       _c("h4", [_vm._v("Home Component")]),
       _vm._v(" "),
@@ -37590,6 +38837,509 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("Navbar"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("Footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "main-title block-section padd-100-top padd-100-btm bg-grey"
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+              _c("h1", { staticClass: "main-title-primary" }, [
+                _vm._v("Nos Services")
+              ]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "main-title-secondary" }, [
+                _vm._v("Tous nos services de consultance")
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "breadcrumbs" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("ol", { staticClass: "breadcrumb" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "/" } }, [_vm._v("Accueil")])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "active" }, [_vm._v("Nos Services")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "site-main" }, [
+      _c("div", { staticClass: "content-section" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("div", { staticClass: "sidebar site-sidebar" }, [
+                _c("div", { staticClass: "widget widget_nav_menu" }, [
+                  _c("ul", [
+                    _c(
+                      "li",
+                      {
+                        staticClass: "current-menu-item",
+                        attrs: { role: "presentation" }
+                      },
+                      [
+                        _c("a", { attrs: { href: "service.html" } }, [
+                          _vm._v("All Services")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      {
+                        staticClass: "menu-item menu-item-has-children",
+                        attrs: { "aria-haspopup": "true" }
+                      },
+                      [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Construction Consultant")
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "sub-menu" }, [
+                          _c("li", { staticClass: "menu-item" }, [
+                            _c("a", { attrs: { href: "service-item.html" } }, [
+                              _vm._v("Residence Renovation")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "menu-item" }, [
+                            _c("a", { attrs: { href: "service-item.html" } }, [
+                              _vm._v("Office Interior Design")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "menu-item" }, [
+                            _c("a", { attrs: { href: "service-item.html" } }, [
+                              _vm._v("Hotels Construction")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "menu-item" }, [
+                            _c("a", { attrs: { href: "service-item.html" } }, [
+                              _vm._v("Plumbing")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "menu-item" }, [
+                            _c("a", { attrs: { href: "service-item.html" } }, [
+                              _vm._v("Construction of Tower")
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "service-item.html" } }, [
+                        _vm._v("Metal Roofting")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "service-item.html" } }, [
+                        _vm._v("General Contracting")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "service-item.html" } }, [
+                        _vm._v("House Renovation")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "service-item.html" } }, [
+                        _vm._v("Construction Management")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "service-item.html" } }, [
+                        _vm._v("Design and Build")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "widget widget_brocure" }, [
+                  _c("h3", { staticClass: "widget-title" }, [
+                    _vm._v("Brocure")
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "nav nav-pills nav-stacked" }, [
+                    _c(
+                      "li",
+                      {
+                        staticClass: "active",
+                        attrs: { role: "presentation" }
+                      },
+                      [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("i", { staticClass: "fa fa-file-pdf-o" }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Download .PDF")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("li", { attrs: { role: "presentation" } }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("i", { staticClass: "fa fa-file-word-o" }),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Download .DOC")])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-9" }, [
+              _c("div", { staticClass: "entry-content" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-services-01.jpg",
+                              alt: "Construction Consultant"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("Construction Consultant")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "A wonderful serenity has taken possession of my entire soul, like these sweet mornings\n                                                of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence\n                                                ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-service-01.jpg",
+                              alt: "metal roofting"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("Metal Roofting")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Construction offer you the best in metal roofing services, supplies and materials to\n                                                help protect one of your biggest investments you will ever make, your home. There is\n                                                no better way ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-services-02.jpg",
+                              alt: "General Contracting"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("General Contracting")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Balancing a composition involves arranging both positive elements and negative\n                                                space in such a way that no one area of the design overpowers other areas.\n                                                Everything works ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-services-03.jpg",
+                              alt: "Construction Management"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("Construction Management")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,\n                                                there live the blind texts. Separated they live in Bookmarksgrove right at the ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-services-04.jpg",
+                              alt: "House Renovation"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("House Renovation")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "One morning, when Gregor Samsa woke from troubled dreams, he found himself\n                                                transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-4" }, [
+                    _c("div", { staticClass: "blog-entry" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "blog-entry-thumbnail",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: "/assets/site/images/img-service-02.jpg",
+                              alt: "Design and Build"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-header" }, [
+                        _c("h2", { staticClass: "entry-title" }, [
+                          _c("a", { attrs: { href: "#", rel: "bookmark" } }, [
+                            _vm._v("Design and Build")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "blog-entry-content" }, [
+                        _c("p", [
+                          _vm._v(
+                            "But I must explain to you how all this mistaken idea of denouncing pleasure\n                                                and praising pain was born and I will give you a complete account of the system,\n                                                and expound the ..."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c(
+                            "a",
+                            { staticClass: "read-more", attrs: { href: "#" } },
+                            [_vm._v("Read more +")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -37848,7 +39598,116 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "header-navbar", attrs: { "data-parallax": "scroll" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "site-header-affix-wrapper" }, [
+        _c(
+          "header",
+          {
+            staticClass: "site-header header-dark",
+            attrs: { id: "masthead", role: "banner" }
+          },
+          [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-9" }, [
+                  _c(
+                    "nav",
+                    {
+                      staticClass: "main-navigation",
+                      attrs: { id: "site-navigation", role: "navigation" }
+                    },
+                    [
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "menu-testing-menu-container" },
+                        [
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "menu nav-menu",
+                              attrs: {
+                                id: "primary-menu",
+                                "aria-expanded": "false"
+                              }
+                            },
+                            [
+                              _vm._m(3),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "menu-item" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: { name: "site.about" } } },
+                                    [_c("span", [_vm._v("A' Propos")])]
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                {
+                                  staticClass:
+                                    "menu-item menu-item-has-children",
+                                  attrs: { "aria-haspopup": "true" }
+                                },
+                                [
+                                  _c(
+                                    "router-link",
+                                    {
+                                      attrs: { to: { name: "site.services" } }
+                                    },
+                                    [_c("span", [_vm._v("Nos Services")])]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(4)
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _vm._m(5),
+                              _vm._v(" "),
+                              _vm._m(6),
+                              _vm._v(" "),
+                              _vm._m(7),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "menu-item" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: { name: "site.contact" } } },
+                                    [_c("span", [_vm._v("Contact")])]
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -37857,512 +39716,38 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      {
-        staticClass: "header",
-        staticStyle: {
-          "background-image": "url('assets/site/images/img-header.jpg')",
-          "background-repeat": "round"
-        },
-        attrs: { "data-parallax": "scroll" }
-      },
+      { staticClass: "topbar topbar-page", attrs: { id: "topbar" } },
       [
-        _c("div", { staticClass: "topbar", attrs: { id: "topbar" } }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-sm-8" }, [
-                _c("div", { staticClass: "nav-utility" }, [
-                  _c("span", { staticClass: "nav-item" }, [
-                    _vm._v(
-                      "A stylish Bootstrap theme for construction companies"
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 hidden-xs" }, [
-                _c("div", { staticClass: "nav-utility nav-right" }, [
-                  _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fa fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fa fa-facebook" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fa fa-linkedin" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fa fa-pinterest" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fa fa-envelope-o" })
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "site-header-affix-wrapper" }, [
-          _c(
-            "header",
-            {
-              staticClass: "site-header",
-              attrs: { id: "masthead", role: "banner" }
-            },
-            [
-              _c("div", { staticClass: "container" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-3" }, [
-                    _c("div", { staticClass: "site-branding" }, [
-                      _c("h1", { staticClass: "site-title title-image" }, [
-                        _c(
-                          "a",
-                          { attrs: { href: "index-2.html", rel: "home" } },
-                          [
-                            _c("img", {
-                              staticClass: "img-responsive",
-                              attrs: {
-                                src: "/assets/site/images/img-logo.png",
-                                alt: "construction business"
-                              }
-                            })
-                          ]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-9" }, [
-                    _c(
-                      "nav",
-                      {
-                        staticClass: "main-navigation",
-                        attrs: { id: "site-navigation", role: "navigation" }
-                      },
-                      [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "menu-toggle",
-                            attrs: {
-                              type: "button",
-                              "aria-controls": "primary-menu",
-                              "aria-expanded": "false"
-                            }
-                          },
-                          [
-                            _c("span", { staticClass: "pe-7s-menu" }),
-                            _c("span", { staticClass: "sr-only" }, [
-                              _vm._v("Primary Menu")
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "menu-testing-menu-container" },
-                          [
-                            _c(
-                              "ul",
-                              {
-                                staticClass: "menu nav-menu",
-                                attrs: {
-                                  id: "primary-menu",
-                                  "aria-expanded": "false"
-                                }
-                              },
-                              [
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "menu-item current-menu-item"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      { attrs: { href: "index-2.html" } },
-                                      [_vm._v("Home")]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("li", { staticClass: "menu-item" }, [
-                                  _c("a", { attrs: { href: "about.html" } }, [
-                                    _vm._v("About")
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass:
-                                      "menu-item menu-item-has-children",
-                                    attrs: { "aria-haspopup": "true" }
-                                  },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("Services")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("ul", { staticClass: "sub-menu" }, [
-                                      _c(
-                                        "li",
-                                        {
-                                          staticClass:
-                                            "menu-item current-menu-item"
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            { attrs: { href: "service.html" } },
-                                            [_vm._v("All Services")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "service-item.html" }
-                                          },
-                                          [_vm._v("Construction Consultant")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "service-item.html" }
-                                          },
-                                          [_vm._v("General Contracting")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "service-item.html" }
-                                          },
-                                          [_vm._v("House Renovation")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "service-item.html" }
-                                          },
-                                          [_vm._v("Construction Management")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "service-item.html" }
-                                          },
-                                          [_vm._v("Design and Build")]
-                                        )
-                                      ])
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass:
-                                      "menu-item menu-item-has-children",
-                                    attrs: { "aria-haspopup": "true" }
-                                  },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("Features")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("ul", { staticClass: "sub-menu" }, [
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          { attrs: { href: "single.html" } },
-                                          [_vm._v("Single Post")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: {
-                                              href: "single-fullwidth.html"
-                                            }
-                                          },
-                                          [_vm._v("Single Post Full Width")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: {
-                                              href: "page-fullwidth.html"
-                                            }
-                                          },
-                                          [_vm._v("Page Full Width")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "page-sidebar.html" }
-                                          },
-                                          [_vm._v("Page With Sidebar")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "li",
-                                        {
-                                          staticClass:
-                                            "menu-item menu-item-has-children",
-                                          attrs: { "aria-haspopup": "true" }
-                                        },
-                                        [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Shortcodes")
-                                          ]),
-                                          _vm._v(" "),
-                                          _c(
-                                            "ul",
-                                            { staticClass: "sub-menu" },
-                                            [
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "alert.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Alert")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "progress.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Progress Bar")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "social.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Social Icon")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "button.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Button & Label")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "accordion.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Accordion")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "tab.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Tabs")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "li",
-                                                { staticClass: "menu-item" },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      attrs: {
-                                                        href: "pricing.html"
-                                                      }
-                                                    },
-                                                    [_vm._v("Pricing")]
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "typography.html" }
-                                          },
-                                          [_vm._v("Typography")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          { attrs: { href: "404.html" } },
-                                          [_vm._v("Not Found")]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li", { staticClass: "menu-item" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { href: "comingsoon.html" }
-                                          },
-                                          [_vm._v("Comingsoon")]
-                                        )
-                                      ])
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("li", { staticClass: "menu-item" }, [
-                                  _c("a", { attrs: { href: "project.html" } }, [
-                                    _vm._v("Projects")
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", { staticClass: "menu-item" }, [
-                                  _c("a", { attrs: { href: "blog.html" } }, [
-                                    _vm._v("Blog")
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", { staticClass: "menu-item" }, [
-                                  _c("a", { attrs: { href: "contact.html" } }, [
-                                    _vm._v("Contact")
-                                  ])
-                                ])
-                              ]
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-5" }, [
-              _c("div", { staticClass: "header-caption" }, [
-                _c("span", { staticClass: "caption-subtitle" }, [
-                  _vm._v("Our Service")
+            _c("div", { staticClass: "col-sm-8" }, [
+              _c("div", { staticClass: "nav-utility" }, [
+                _c("span", { staticClass: "nav-item" }, [
+                  _vm._v("A stylish Bootstrap theme for construction companies")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-4 hidden-xs" }, [
+              _c("div", { staticClass: "nav-utility nav-right" }, [
+                _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-twitter" })
                 ]),
                 _vm._v(" "),
-                _c("h2", { staticClass: "caption-title" }, [
-                  _vm._v(
-                    "We are your best homes, offices renovations and construction solution."
-                  )
+                _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-facebook" })
                 ]),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "We provide overall planning, coordination and control of a project, so you don’t have to worry about anything. Our promise as a contractor is to build community value into every project while delivering professional expertise."
-                  )
+                _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-linkedin" })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "header-action-button" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-warning btn-md",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Purchase")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-default btn-bordered  btn-md",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Learn more")]
-                  )
+                _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-pinterest" })
+                ]),
+                _vm._v(" "),
+                _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-envelope-o" })
                 ])
               ])
             ])
@@ -38370,6 +39755,660 @@ var staticRenderFns = [
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-3" }, [
+      _c("div", { staticClass: "site-branding" }, [
+        _c("h1", { staticClass: "site-title title-image" }, [
+          _c("a", { attrs: { href: "index-2.html", rel: "home" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/assets/site/images/img-logo.png",
+                alt: "construction business"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "menu-toggle",
+        attrs: {
+          type: "button",
+          "aria-controls": "primary-menu",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("span", { staticClass: "pe-7s-menu" }),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Primary Menu")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item current-menu-item" }, [
+      _c("a", { attrs: { href: "/" } }, [_vm._v("Accueil")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "sub-menu" }, [
+      _c("li", { staticClass: "menu-item current-menu-item" }, [
+        _c("a", { attrs: { href: "service.html" } }, [
+          _vm._v("Tous nos Services")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Construction Consultant")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("General Contracting")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("House Renovation")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Construction Management")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Design and Build")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "menu-item menu-item-has-children",
+        attrs: { "aria-haspopup": "true" }
+      },
+      [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Features")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "sub-menu" }, [
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "single.html" } }, [_vm._v("Single Post")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "single-fullwidth.html" } }, [
+              _vm._v("Single Post Full Width")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "page-fullwidth.html" } }, [
+              _vm._v("Page Full Width")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "page-sidebar.html" } }, [
+              _vm._v("Page With Sidebar")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "menu-item menu-item-has-children",
+              attrs: { "aria-haspopup": "true" }
+            },
+            [
+              _c("a", { attrs: { href: "#" } }, [_vm._v("Shortcodes")]),
+              _vm._v(" "),
+              _c("ul", { staticClass: "sub-menu" }, [
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "alert.html" } }, [_vm._v("Alert")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "progress.html" } }, [
+                    _vm._v("Progress Bar")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "social.html" } }, [
+                    _vm._v("Social Icon")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "button.html" } }, [
+                    _vm._v("Button & Label")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "accordion.html" } }, [
+                    _vm._v("Accordion")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "tab.html" } }, [_vm._v("Tabs")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "pricing.html" } }, [
+                    _vm._v("Pricing")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "typography.html" } }, [
+              _vm._v("Typography")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "404.html" } }, [_vm._v("Not Found")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "comingsoon.html" } }, [
+              _vm._v("Comingsoon")
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item" }, [
+      _c("a", { attrs: { href: "project.html" } }, [_vm._v("Projects")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item" }, [
+      _c("a", { attrs: { href: "blog.html" } }, [_vm._v("Blog")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "header",
+      staticStyle: {
+        "background-image": "url('assets/site/images/img-header.jpg')",
+        "background-repeat": "round"
+      },
+      attrs: { "data-parallax": "scroll" }
+    },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "site-header-affix-wrapper" }, [
+        _c(
+          "header",
+          {
+            staticClass: "site-header",
+            attrs: { id: "masthead", role: "banner" }
+          },
+          [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-9" }, [
+                  _c(
+                    "nav",
+                    {
+                      staticClass: "main-navigation",
+                      attrs: { id: "site-navigation", role: "navigation" }
+                    },
+                    [
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "menu-testing-menu-container" },
+                        [
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "menu nav-menu",
+                              attrs: {
+                                id: "primary-menu",
+                                "aria-expanded": "false"
+                              }
+                            },
+                            [
+                              _vm._m(3),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "menu-item" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: { name: "site.about" } } },
+                                    [_c("span", [_vm._v("A' Propos")])]
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                {
+                                  staticClass:
+                                    "menu-item menu-item-has-children",
+                                  attrs: { "aria-haspopup": "true" }
+                                },
+                                [
+                                  _c(
+                                    "router-link",
+                                    {
+                                      attrs: { to: { name: "site.services" } }
+                                    },
+                                    [_c("span", [_vm._v("Nos Services")])]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(4)
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _vm._m(5),
+                              _vm._v(" "),
+                              _vm._m(6),
+                              _vm._v(" "),
+                              _vm._m(7),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "menu-item" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    { attrs: { to: { name: "site.contact" } } },
+                                    [_c("span", [_vm._v("Contact")])]
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(8)
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "topbar", attrs: { id: "topbar" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-8" }, [
+            _c("div", { staticClass: "nav-utility" }, [
+              _c("span", { staticClass: "nav-item" }, [
+                _vm._v("A stylish Bootstrap theme for construction companies")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-4 hidden-xs" }, [
+            _c("div", { staticClass: "nav-utility nav-right" }, [
+              _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-twitter" })
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-facebook" })
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-linkedin" })
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-pinterest" })
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "nav-item", attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fa fa-envelope-o" })
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-3" }, [
+      _c("div", { staticClass: "site-branding" }, [
+        _c("h1", { staticClass: "site-title title-image" }, [
+          _c("a", { attrs: { href: "index-2.html", rel: "home" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/assets/site/images/img-logo.png",
+                alt: "construction business"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "menu-toggle",
+        attrs: {
+          type: "button",
+          "aria-controls": "primary-menu",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("span", { staticClass: "pe-7s-menu" }),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Primary Menu")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item current-menu-item" }, [
+      _c("a", { attrs: { href: "/" } }, [_vm._v("Accueil")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "sub-menu" }, [
+      _c("li", { staticClass: "menu-item current-menu-item" }, [
+        _c("a", { attrs: { href: "service.html" } }, [
+          _vm._v("Tous nos Services")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Construction Consultant")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("General Contracting")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("House Renovation")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Construction Management")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "menu-item" }, [
+        _c("a", { attrs: { href: "service-item.html" } }, [
+          _vm._v("Design and Build")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass: "menu-item menu-item-has-children",
+        attrs: { "aria-haspopup": "true" }
+      },
+      [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Features")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "sub-menu" }, [
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "single.html" } }, [_vm._v("Single Post")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "single-fullwidth.html" } }, [
+              _vm._v("Single Post Full Width")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "page-fullwidth.html" } }, [
+              _vm._v("Page Full Width")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "page-sidebar.html" } }, [
+              _vm._v("Page With Sidebar")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "menu-item menu-item-has-children",
+              attrs: { "aria-haspopup": "true" }
+            },
+            [
+              _c("a", { attrs: { href: "#" } }, [_vm._v("Shortcodes")]),
+              _vm._v(" "),
+              _c("ul", { staticClass: "sub-menu" }, [
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "alert.html" } }, [_vm._v("Alert")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "progress.html" } }, [
+                    _vm._v("Progress Bar")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "social.html" } }, [
+                    _vm._v("Social Icon")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "button.html" } }, [
+                    _vm._v("Button & Label")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "accordion.html" } }, [
+                    _vm._v("Accordion")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "tab.html" } }, [_vm._v("Tabs")])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "menu-item" }, [
+                  _c("a", { attrs: { href: "pricing.html" } }, [
+                    _vm._v("Pricing")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "typography.html" } }, [
+              _vm._v("Typography")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "404.html" } }, [_vm._v("Not Found")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "menu-item" }, [
+            _c("a", { attrs: { href: "comingsoon.html" } }, [
+              _vm._v("Comingsoon")
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item" }, [
+      _c("a", { attrs: { href: "project.html" } }, [_vm._v("Projects")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "menu-item" }, [
+      _c("a", { attrs: { href: "blog.html" } }, [_vm._v("Blog")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-5" }, [
+          _c("div", { staticClass: "header-caption" }, [
+            _c("span", { staticClass: "caption-subtitle" }, [
+              _vm._v("Our Service")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "caption-title" }, [
+              _vm._v(
+                "We are your best homes, offices renovations and construction solution."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "We provide overall planning, coordination and control of a project, so you don’t have to worry about anything. Our promise as a contractor is to build community value into every project while delivering professional expertise."
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "header-action-button" }, [
+              _c(
+                "a",
+                { staticClass: "btn btn-warning btn-md", attrs: { href: "#" } },
+                [_vm._v("Purchase")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-default btn-bordered  btn-md",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Learn more")]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -53627,6 +55666,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Contact.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Contact.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact.vue?vue&type=template&id=4c2584f6&scoped=true& */ "./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true&");
+/* harmony import */ var _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Contact.vue?vue&type=script&lang=js& */ "./resources/js/components/Contact.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "4c2584f6",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Contact.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Contact.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/Contact.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Contact.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Contact.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Contact.vue?vue&type=template&id=4c2584f6&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Contact.vue?vue&type=template&id=4c2584f6&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_4c2584f6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Home.vue ***!
@@ -53691,6 +55799,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Services.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Services.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Services.vue?vue&type=template&id=30b0c6c9&scoped=true& */ "./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true&");
+/* harmony import */ var _Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Services.vue?vue&type=script&lang=js& */ "./resources/js/components/Services.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "30b0c6c9",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Services.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Services.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/Services.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true& ***!
+  \*****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=template&id=30b0c6c9&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_template_id_30b0c6c9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -53834,6 +56011,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/layouts/NavbarHome.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/layouts/NavbarHome.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true& */ "./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true&");
+/* harmony import */ var _NavbarHome_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavbarHome.vue?vue&type=script&lang=js& */ "./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _NavbarHome_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "d0da5e1a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/layouts/NavbarHome.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NavbarHome_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./NavbarHome.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/NavbarHome.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NavbarHome_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/NavbarHome.vue?vue&type=template&id=d0da5e1a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NavbarHome_vue_vue_type_template_id_d0da5e1a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/routes/routes.js":
 /*!***************************************!*\
   !*** ./resources/js/routes/routes.js ***!
@@ -53846,16 +56092,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "routes", function() { return routes; });
 /* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Home */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/About */ "./resources/js/components/About.vue");
+/* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Contact */ "./resources/js/components/Contact.vue");
+/* harmony import */ var _components_Services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Services */ "./resources/js/components/Services.vue");
+
+
 
 
 var routes = [{
   path: '/',
-  name: 'home',
+  name: 'site.home',
   component: _components_Home__WEBPACK_IMPORTED_MODULE_0__["default"]
 }, {
   path: '/about',
-  name: 'about',
+  name: 'site.about',
   component: _components_About__WEBPACK_IMPORTED_MODULE_1__["default"]
+}, {
+  path: '/contact-us',
+  name: 'site.contact',
+  component: _components_Contact__WEBPACK_IMPORTED_MODULE_2__["default"]
+}, {
+  path: '/nos-services',
+  name: 'site.services',
+  component: _components_Services__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];
 
 /***/ }),

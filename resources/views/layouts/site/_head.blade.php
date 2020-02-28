@@ -44,6 +44,8 @@
 <!-- Notify Alert plugin -->
 <link rel="stylesheet" href="/assets/css/plugins/notify.css">
 <link rel="stylesheet" href="/assets/css/plugins/toastr.min.css">
+<!-- Styles Group Ed & Wd -->
+<link rel="stylesheet" href="/assets/css/groupEdWd.css">
 
 @section('style')
 

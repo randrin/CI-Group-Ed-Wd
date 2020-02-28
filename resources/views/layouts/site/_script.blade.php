@@ -9,6 +9,9 @@
 <script src="/assets/site/plugins/imagesloaded.pkgd.min.js"></script>
 <script src="/assets/site/plugins/isotope.pkgd.min.js"></script>
 <script src="/assets/site/plugins/owl.carousel.min.js"></script>
+<script src="/assets/site/plugins/gmap3.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
+<script src="/assets/site//js/map.js"></script>
 <script src="/assets/site/js/script.min.js"></script>
 <!-- Sweet Alert 2 plugin -->
 <script src="/assets/js/plugins/sweetalert2.js"></script>

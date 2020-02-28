@@ -1,8 +1,8 @@
 <template>
     <!-- begin:header -->
-    <div class="header-navbar" data-parallax="scroll">
+    <div class="header" data-parallax="scroll" style="background-image: url('assets/site/images/img-header.jpg'); background-repeat: round;">
         <!-- begin:topbar -->
-        <div id="topbar" class="topbar topbar-page">
+        <div id="topbar" class="topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
@@ -26,16 +26,12 @@
 
         <!-- begin:site-navigation -->
         <div class="site-header-affix-wrapper">
-            <header id="masthead" class="site-header header-dark" role="banner">
+            <header id="masthead" class="site-header" role="banner">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="site-branding">
-                                <h1 class="site-title title-image">
-                                    <a href="index-2.html" rel="home">
-                                        <img src="/assets/site/images/img-logo.png" alt="construction business" class="img-responsive">
-                                    </a>
-                                </h1>
+                                <h1 class="site-title title-image"><a href="index-2.html" rel="home"><img src="/assets/site/images/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
                             </div><!-- .site-branding -->
                         </div><!-- .col-sm-3 -->
 
@@ -104,12 +100,28 @@
             </header><!-- #masthead -->
         </div><!-- .site-header-affix-wrapper -->
         <!-- end:site-navigation -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="header-caption">
+                        <span class="caption-subtitle">Our Service</span>
+                        <h2 class="caption-title">We are your best homes, offices renovations and construction solution.</h2>
+                        <p>We provide overall planning, coordination and control of a project, so you don’t have to worry about anything. Our promise as a contractor is to build community value into every project while delivering professional expertise.</p>
+                        <div class="header-action-button">
+                            <a class="btn btn-warning btn-md" href="#">Purchase</a>
+                            <a class="btn btn-default btn-bordered  btn-md" href="#">Learn more</a>
+                        </div><!-- header-action-button -->
+                    </div><!-- .header-caption -->
+                </div><!-- .col-sm-5 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
     </div>
 </template>
 
 <script>
     export default {
-        name: "Navbar"
+        name: "NavbarHome"
     }
 </script>
 
