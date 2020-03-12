@@ -32,7 +32,7 @@
                         <div class="col-sm-3">
                             <div class="site-branding">
                                 <h1 class="site-title title-image">
-                                    <a href="index-2.html" rel="home">
+                                    <a href="/" rel="home">
                                         <img src="/assets/site/images/img-logo.png" alt="construction business" class="img-responsive">
                                     </a>
                                 </h1>

@@ -19,7 +19,8 @@
 <script src="/assets/js/plugins/zoom.min.js"></script>
 <!-- Js Applications  -->
 <script src="{{ mix('/js/app.js') }}"></script>
-
+<!-- JavaScript Group Ed & Wd -->
+<script src="/assets/js/groupEdWd.js"></script>
 @section('scripts')
 
 @show

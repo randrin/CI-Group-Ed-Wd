@@ -40782,219 +40782,229 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "section",
+      { staticClass: "copyright bg-black", attrs: { id: "copyright" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6 copy-left" }, [
+              _c("p", [
+                _vm._v(
+                  "© 2019 - " +
+                    _vm._s(new Date().getFullYear()) +
+                    ". Realisé par "
+                ),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      target: "_blank",
+                      href: "https://www.templateshub.net"
+                    }
+                  },
+                  [_vm._v("KazouGroup Srl")]
+                ),
+                _vm._v(". Tous droits reservés.")
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(1)
+          ])
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "footer",
-        {
-          staticClass: "site-footer bg-black",
-          attrs: { id: "colophon", role: "contentinfo" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
-                _c("section", { staticClass: "widget" }, [
-                  _c("img", {
-                    staticClass: "img-responsive marg-20-btm marg-20-top",
-                    attrs: {
-                      src: "/assets/site/images/img-logo-footer.png",
-                      alt: "bootstrap theme for construction companies"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Construction company based on Orange, California. Construction was very sufficient in maintaining the integrity of project in terms of planning, scheduling, cost and quality."
-                    )
-                  ])
+    return _c(
+      "footer",
+      {
+        staticClass: "site-footer bg-black",
+        attrs: { id: "colophon", role: "contentinfo" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+              _c("section", { staticClass: "widget" }, [
+                _c("img", {
+                  staticClass: "img-responsive marg-20-btm marg-20-top",
+                  attrs: {
+                    src: "/assets/site/images/img-logo-footer.png",
+                    alt: "bootstrap theme for construction companies"
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Construction company based on Orange, California. Construction was very sufficient in maintaining the integrity of project in terms of planning, scheduling, cost and quality."
+                  )
                 ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0"
-                },
-                [
-                  _c("section", { staticClass: "widget" }, [
-                    _c("h3", { staticClass: "widget-title" }, [
-                      _vm._v("Our Company")
-                    ]),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("About us")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Service")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Selected Work")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Get in touch")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Careers")])
-                      ])
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0"
+              },
+              [
                 _c("section", { staticClass: "widget" }, [
                   _c("h3", { staticClass: "widget-title" }, [
-                    _vm._v("Our Services")
+                    _vm._v("Our Company")
                   ]),
                   _vm._v(" "),
                   _c("ul", [
                     _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("About us")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Service")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
                       _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Metal Roofting")
+                        _vm._v("Selected Work")
                       ])
                     ]),
                     _vm._v(" "),
                     _c("li", [
                       _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Green Building")
+                        _vm._v("Get in touch")
                       ])
                     ]),
                     _vm._v(" "),
                     _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Construction Consultant")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Construction Management")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("General Contracting")
-                      ])
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Careers")])
                     ])
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-6" }, [
-                _c("section", { staticClass: "widget" }, [
-                  _c("h3", { staticClass: "widget-title" }, [
-                    _vm._v("Our Contact")
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+              _c("section", { staticClass: "widget" }, [
+                _c("h3", { staticClass: "widget-title" }, [
+                  _vm._v("Our Services")
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Metal Roofting")
+                    ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "5252 E Walnut Ave, Orange, California, United States."
-                    )
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Green Building")
+                    ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v("hello@construction.me"),
-                    _c("br"),
-                    _vm._v("+62 (0) 274 441 5005")
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Construction Consultant")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Construction Management")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("General Contracting")
+                    ])
                   ])
                 ])
               ])
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        { staticClass: "copyright bg-black", attrs: { id: "copyright" } },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-sm-6 copy-left" }, [
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-sm-6" }, [
+              _c("section", { staticClass: "widget" }, [
+                _c("h3", { staticClass: "widget-title" }, [
+                  _vm._v("Our Contact")
+                ]),
+                _vm._v(" "),
                 _c("p", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        target: "_blank",
-                        href: "https://www.templateshub.net"
-                      }
-                    },
-                    [_vm._v("Templates Hub")]
-                  ),
-                  _vm._v(". All Right Reserved.")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-6 copy-right" }, [
-                _c("ul", { staticClass: "social-icon" }, [
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-twitter",
-                        attrs: { href: "#", target: "_blank" }
-                      },
-                      [_c("i", { staticClass: "fa fa-twitter" })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-facebook",
-                        attrs: { href: "#", target: "_blank" }
-                      },
-                      [_c("i", { staticClass: "fa fa-facebook-square" })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-youtube",
-                        attrs: { href: "#", target: "_blank" }
-                      },
-                      [_c("i", { staticClass: "fa fa-youtube" })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-instagram",
-                        attrs: { href: "#", target: "_blank" }
-                      },
-                      [_c("i", { staticClass: "fa fa-instagram" })]
-                    )
-                  ])
+                  _vm._v(
+                    "5252 E Walnut Ave, Orange, California, United States."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("hello@construction.me"),
+                  _c("br"),
+                  _vm._v("+62 (0) 274 441 5005")
                 ])
               ])
             ])
           ])
-        ]
-      )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-6 copy-right" }, [
+      _c("ul", { staticClass: "social-icon" }, [
+        _c("li", [
+          _c(
+            "a",
+            {
+              staticClass: "icon-twitter",
+              attrs: { href: "#", target: "_blank" }
+            },
+            [_c("i", { staticClass: "fa fa-twitter" })]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            {
+              staticClass: "icon-facebook",
+              attrs: { href: "#", target: "_blank" }
+            },
+            [_c("i", { staticClass: "fa fa-facebook-square" })]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            {
+              staticClass: "icon-youtube",
+              attrs: { href: "#", target: "_blank" }
+            },
+            [_c("i", { staticClass: "fa fa-youtube" })]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            {
+              staticClass: "icon-instagram",
+              attrs: { href: "#", target: "_blank" }
+            },
+            [_c("i", { staticClass: "fa fa-instagram" })]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -41195,7 +41205,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-sm-3" }, [
       _c("div", { staticClass: "site-branding" }, [
         _c("h1", { staticClass: "site-title title-image" }, [
-          _c("a", { attrs: { href: "index-2.html", rel: "home" } }, [
+          _c("a", { attrs: { href: "/", rel: "home" } }, [
             _c("img", {
               staticClass: "img-responsive",
               attrs: {
@@ -41587,7 +41597,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-sm-3" }, [
       _c("div", { staticClass: "site-branding" }, [
         _c("h1", { staticClass: "site-title title-image" }, [
-          _c("a", { attrs: { href: "index-2.html", rel: "home" } }, [
+          _c("a", { attrs: { href: "/", rel: "home" } }, [
             _c("img", {
               staticClass: "img-responsive",
               attrs: {

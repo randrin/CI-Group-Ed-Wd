@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 copy-left">
-                        <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a>. All Right Reserved.</p>
+                        <p>&copy; 2019 - {{ new Date().getFullYear() }}. Realisé par <a target="_blank" href="https://www.templateshub.net">KazouGroup Srl</a>. Tous droits reservés.</p>
                     </div><!-- .col-sm-6 -->
 
                     <div class="col-sm-6 copy-right">
