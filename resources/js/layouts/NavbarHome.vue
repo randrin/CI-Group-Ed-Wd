@@ -61,6 +61,11 @@
                                                 <li class="menu-item"><a href="service-item.html">Design and Build</a></li>
                                             </ul>
                                         </li>
+                                        <li class="menu-item">
+                                            <router-link :to="{ name: 'site.projects' }">
+                                                <span>Nos Projects</span>
+                                            </router-link>
+                                        </li>
                                         <li class="menu-item menu-item-has-children" aria-haspopup="true">
                                             <a href="#">Features</a>
                                             <ul class="sub-menu">
@@ -84,8 +89,7 @@
                                                 <li class="menu-item"><a href="comingsoon.html">Comingsoon</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item"><a href="project.html">Projects</a></li>
-                                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                        <!--<li class="menu-item"><a href="blog.html">Blog</a></li>-->
                                         <li class="menu-item">
                                             <router-link :to="{name: 'site.contact' }">
                                                 <span>Contact</span>
