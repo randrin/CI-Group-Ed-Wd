@@ -4,6 +4,7 @@
 <script src="/assets/site/bootstrap/js/bootstrap.min.js"></script>
 <script src="/assets/site/plugins/parallax.min.js"></script>
 <script src="/assets/site/js/navigation.js"></script>
+<script src="/assets/site/js/script.min.js"></script>
 <script src="/assets/site/plugins/jquery.easing.js"></script>
 <script src="/assets/site/plugins/jquery.magnific-popup.min.js"></script>
 <script src="/assets/site/plugins/imagesloaded.pkgd.min.js"></script>

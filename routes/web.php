@@ -12,24 +12,18 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::view('/{any}', 'index');
 
 Auth::routes(['verify' => true]);
-Route::group(['namespace' => 'Auth','middleware' => 'web'], function () {
 
-    Route::get('user/logout', 'LoginController@logout')->name('logout');
+/** Auth **/
+require(__DIR__ . DIRECTORY_SEPARATOR . 'web' .DIRECTORY_SEPARATOR . 'auth' . DIRECTORY_SEPARATOR . 'index.php');
 
-    // Social Auth
-    Route::get('oauth/{driver}', 'SocialAuthController@redirectToProvider')->name('social.oauth');
-    Route::get('oauth/{driver}/callback', 'SocialAuthController@handleProviderCallback')->name('social.callback');
+/** Dashboard **/
+require(__DIR__ . DIRECTORY_SEPARATOR . 'web' .DIRECTORY_SEPARATOR . 'dashboard' . DIRECTORY_SEPARATOR . 'index.php');
 
-    // Reset password
-    Route::get('user/change_password', 'ChangePasswordController@showChangePasswordForm')->name('user.change_password');
-    Route::patch('user/change_password', 'ChangePasswordController@changePassword')->name('user.change_password');
+/** Site **/
+require(__DIR__ . DIRECTORY_SEPARATOR . 'web' .DIRECTORY_SEPARATOR . 'site' . DIRECTORY_SEPARATOR . 'index.php');
 
-});
 
-Route::group(['namespace' => 'Site'], function () {
-    Route::get('/about', 'AboutController@index')->name('about');
-    Route::get('/nos-services', 'ServicesController@index')->name('services');
-    Route::get('/nos-projects', 'ProjectsController@index')->name('projects');
-});
+Route::get('/home', 'HomeController@index')->name('home');

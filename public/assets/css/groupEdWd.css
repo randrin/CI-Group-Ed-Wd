@@ -45,3 +45,12 @@
 .current-menu-item > a {
     text-decoration: none !important;
 }
+.sticky-bar {
+    background-color: #ffa800 !important;
+}
+.groupEdWd-line-divider {
+    border-top-color: #ffa800;
+}
+.btn:focus {
+    outline: none !important;
+}
