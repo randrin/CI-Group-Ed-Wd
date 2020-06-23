@@ -11,16 +11,16 @@
                     </div>
                 </div>
             </div>
-
             <div class="container clear">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
-                        <h3 class="text-center padd-20-btm padd-60-top">Bienvenue sur la Page de Login</h3>
+                        <h3 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Bienvenue sur la Page de
+                            Login</h3>
                         <form @submit.prevent="login" class="contact-form">
                             <div class="form-group padd-20-btm">
                                 <label for="username">Identifiant</label>
                                 <input type="text" v-model="form.username" name="username"
-                                       placeholder="Votre Pseudo ou Adresse e-mail" class="form-control form-bordered"
+                                       placeholder="Votre Pseudo" class="form-control form-bordered"
                                        id="username">
                             </div>
                             <div class="form-group padd-20-btm">
@@ -35,8 +35,9 @@
                                 </p>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <button type="submit" :disabled="!checkValidation" class="btn btn-lg btn-warning">Se
-                                    Connecter
+                                <button type="submit" :disabled="!checkValidation" class="btn btn-lg btn-warning">
+                                    <span class="font-weight-bold">Se Connecter</span>
+                                    <i class="fa fa-long-arrow-right"></i>
                                 </button>
                             </div>
                             <hr class="groupEdWd-line-divider"/>
@@ -82,7 +83,7 @@
                         this.$router.push('/');
                     })
                     .catch((error) => {
-                        this.errors = error.response.data.error;
+                        this.errors = error.response.data.errors;
                         console.log(this.errors);
                     })
             }

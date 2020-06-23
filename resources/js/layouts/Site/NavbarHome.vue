@@ -19,8 +19,10 @@
                     </div>
                     <div class="col-sm-3 hidden-xs">
                         <div class="nav-utility nav-right">
-                            <router-link :to="{name: 'dashboard.index' }" class="button"><i
-                                    class="fa fa-user-circle"></i> Zone Privée
+                            <router-link :to="{name: 'site.login' }" class="button">
+                                <i class="fa fa-user-circle"></i>
+                                <span v-if="userConnected">{{username}}</span>
+                                <span v-else>Zone Privée</span>
                             </router-link>
                         </div>
                     </div>
@@ -139,7 +141,24 @@
 
 <script>
     export default {
-        name: "NavbarHome"
+        name: "NavbarHome",
+        data() {
+            return {
+                userConnected: false,
+                username: '',
+            }
+        },
+        created() {
+            this.getInfosUserConnected();
+        },
+        methods: {
+            getInfosUserConnected() {
+                if (window.user.user !== null) {
+                    this.username = window.user.user.username;
+                    this.userConnected = this.username !== null ? true : false;
+                }
+            }
+        }
     }
 </script>
 

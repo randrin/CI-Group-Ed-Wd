@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 copy-left">
-                        <p>&copy; 2019 - {{ new Date().getFullYear() }}. Realisé par <a target="_blank" href="https://www.templateshub.net">KazouGroup Srl</a>. Tous droits reservés.</p>
+                        <p>Copyright &copy; 2019 - {{ new Date().getFullYear() }}. Realisé par <a target="_blank" href="https://www.kazoucoin.com/">KazouGroup Srl</a>. Tous droits reservés.</p>
                     </div>
 
                     <div class="col-sm-6 copy-right">

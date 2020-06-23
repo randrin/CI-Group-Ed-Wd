@@ -2126,6 +2126,30 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2135,7 +2159,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     InformationsContact: _Site_inc_InformationsContact__WEBPACK_IMPORTED_MODULE_2__["default"],
     Navbar: _layouts_Site_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _layouts_Site_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }, "InformationsContact", _Site_inc_InformationsContact__WEBPACK_IMPORTED_MODULE_2__["default"])
+  }, "InformationsContact", _Site_inc_InformationsContact__WEBPACK_IMPORTED_MODULE_2__["default"]),
+  data: function data() {
+    return {
+      form: {
+        contact_name: '',
+        contact_email: '',
+        contact_phone: '',
+        contact_subject: '',
+        contact_message: ''
+      }
+    };
+  },
+  computed: {
+    checkValidation: function checkValidation() {
+      return this.form.contact_name && this.form.contact_email && this.form.contact_phone && this.form.contact_subject && this.form.contact_message ? true : false;
+    }
+  },
+  methods: {
+    contact: function contact() {}
+  }
 });
 
 /***/ }),
@@ -2639,6 +2682,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2668,7 +2712,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/login', this.form).then(function (response) {
         _this.$router.push('/');
       })["catch"](function (error) {
-        _this.errors = error.response.data.error;
+        _this.errors = error.response.data.errors;
         console.log(_this.errors);
       });
     }
@@ -2737,6 +2781,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2755,6 +2816,14 @@ __webpack_require__.r(__webpack_exports__);
         password_confirmation: ''
       }
     };
+  },
+  computed: {
+    checkValidation: function checkValidation() {
+      return this.form.name && this.form.username && this.form.email && this.form.password && this.form.password_confirmation ? true : false;
+    }
+  },
+  methods: {
+    register: function register() {}
   }
 });
 
@@ -3260,6 +3329,114 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Valeurs"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layouts_Site_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../layouts/Site/Navbar */ "./resources/js/layouts/Site/Navbar.vue");
+/* harmony import */ var _layouts_Site_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../layouts/Site/Footer */ "./resources/js/layouts/Site/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ChangePassword",
+  components: {
+    Footer: _layouts_Site_Footer__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Navbar: _layouts_Site_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      form: {
+        old_password: '',
+        password: '',
+        password_confirmation: ''
+      },
+      errors: []
+    };
+  },
+  computed: {
+    checkValidation: function checkValidation() {
+      return this.form.old_password && this.form.password && this.form.password_confirmation ? true : false;
+    }
+  },
+  methods: {
+    changePassword: function changePassword() {
+      var _this = this;
+
+      axios.post('/change_password', this.form).then(function (res) {
+        console.log('response: ', res); //Insertion de l'alert !
+
+        var notify = $.notify('<strong>Please wait a moment</strong> ...', {
+          allow_dismiss: false,
+          showProgressbar: true,
+          animate: {
+            enter: 'animated bounceInDown',
+            exit: 'animated bounceOutUp'
+          }
+        });
+        setTimeout(function () {
+          notify.update({
+            'type': 'success',
+            'message': '<strong>Password updated successfully.</strong>',
+            'progress': 75
+          });
+        }, 2000); //Fin insertion de l'alert !
+
+        _this.form.reset();
+      })["catch"](function (error) {
+        _this.errors = error.response.data;
+        console.log(_this.errors);
+        toastr.error('', 'Passwords Incorrects.');
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -4074,8 +4251,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "NavbarHome"
+  name: "NavbarHome",
+  data: function data() {
+    return {
+      userConnected: false,
+      username: ''
+    };
+  },
+  created: function created() {
+    this.getInfosUserConnected();
+  },
+  methods: {
+    getInfosUserConnected: function getInfosUserConnected() {
+      if (window.user.user !== null) {
+        this.username = window.user.user.username;
+        this.userConnected = this.username !== null ? true : false;
+      }
+    }
+  }
 });
 
 /***/ }),
@@ -40501,7 +40697,302 @@ var render = function() {
         _c(
           "div",
           { staticClass: "block-section" },
-          [_c("InformationsContact"), _vm._v(" "), _vm._m(2)],
+          [
+            _c("InformationsContact"),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "contact block-section image-block bg-white",
+                attrs: { id: "contact" }
+              },
+              [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("div", { staticClass: "container clear" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm"
+                      },
+                      [
+                        _c(
+                          "form",
+                          {
+                            staticClass: "contact-form",
+                            on: {
+                              submit: function($event) {
+                                $event.preventDefault()
+                                return _vm.contact($event)
+                              }
+                            }
+                          },
+                          [
+                            _vm._m(3),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group padd-20-btm" },
+                              [
+                                _c(
+                                  "label",
+                                  { attrs: { for: "contact_name" } },
+                                  [_vm._v("Nom et Prènom")]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.form.contact_name,
+                                      expression: "form.contact_name"
+                                    }
+                                  ],
+                                  staticClass: "form-control form-bordered",
+                                  attrs: {
+                                    type: "text",
+                                    name: "contact_name",
+                                    placeholder: "Insèrez votre nom complet",
+                                    id: "contact_name"
+                                  },
+                                  domProps: { value: _vm.form.contact_name },
+                                  on: {
+                                    input: function($event) {
+                                      if ($event.target.composing) {
+                                        return
+                                      }
+                                      _vm.$set(
+                                        _vm.form,
+                                        "contact_name",
+                                        $event.target.value
+                                      )
+                                    }
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "row padd-20-btm" }, [
+                              _c("div", { staticClass: "col-sm-6" }, [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c(
+                                    "label",
+                                    {
+                                      staticClass: "form-label",
+                                      attrs: { for: "contact_email" }
+                                    },
+                                    [_vm._v("Addresse e-mail")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.contact_email,
+                                        expression: "form.contact_email"
+                                      }
+                                    ],
+                                    staticClass: "form-control form-bordered",
+                                    attrs: {
+                                      type: "email",
+                                      name: "contact_email",
+                                      placeholder:
+                                        "Insèrez votre courier électronique",
+                                      id: "contact_email"
+                                    },
+                                    domProps: { value: _vm.form.contact_email },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.$set(
+                                          _vm.form,
+                                          "contact_email",
+                                          $event.target.value
+                                        )
+                                      }
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "col-sm-6" }, [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c(
+                                    "label",
+                                    {
+                                      staticClass: "form-label",
+                                      attrs: { for: "contact_phone" }
+                                    },
+                                    [_vm._v("Numero de Télephone")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.contact_phone,
+                                        expression: "form.contact_phone"
+                                      }
+                                    ],
+                                    staticClass: "form-control form-bordered",
+                                    attrs: {
+                                      type: "number",
+                                      name: "contact_phone",
+                                      placeholder:
+                                        "Insèrez votre numèro de télephone",
+                                      id: "contact_phone"
+                                    },
+                                    domProps: { value: _vm.form.contact_phone },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.$set(
+                                          _vm.form,
+                                          "contact_phone",
+                                          $event.target.value
+                                        )
+                                      }
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group padd-20-btm" },
+                              [
+                                _c(
+                                  "label",
+                                  { attrs: { for: "contact_subject" } },
+                                  [_vm._v("Suject Message")]
+                                ),
+                                _vm._v(" "),
+                                _c("input", {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.form.contact_subject,
+                                      expression: "form.contact_subject"
+                                    }
+                                  ],
+                                  staticClass: "form-control form-bordered",
+                                  attrs: {
+                                    type: "text",
+                                    name: "contact_subject",
+                                    placeholder:
+                                      "Insèrez votre sujet de contact",
+                                    id: "contact_subject"
+                                  },
+                                  domProps: { value: _vm.form.contact_subject },
+                                  on: {
+                                    input: function($event) {
+                                      if ($event.target.composing) {
+                                        return
+                                      }
+                                      _vm.$set(
+                                        _vm.form,
+                                        "contact_subject",
+                                        $event.target.value
+                                      )
+                                    }
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group padd-20-btm" },
+                              [
+                                _c(
+                                  "label",
+                                  {
+                                    staticClass: "form-label",
+                                    attrs: { for: "contact_message" }
+                                  },
+                                  [_vm._v("Message")]
+                                ),
+                                _vm._v(" "),
+                                _c("textarea", {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.form.contact_message,
+                                      expression: "form.contact_message"
+                                    }
+                                  ],
+                                  staticClass: "form-control form-bordered",
+                                  attrs: {
+                                    rows: "6",
+                                    name: "contact_message",
+                                    placeholder: "Insèrez votre message",
+                                    id: "contact_message"
+                                  },
+                                  domProps: { value: _vm.form.contact_message },
+                                  on: {
+                                    input: function($event) {
+                                      if ($event.target.composing) {
+                                        return
+                                      }
+                                      _vm.$set(
+                                        _vm.form,
+                                        "contact_message",
+                                        $event.target.value
+                                      )
+                                    }
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group padd-20-btm" },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn btn-lg btn-warning",
+                                    attrs: {
+                                      type: "submit",
+                                      disabled: !_vm.checkValidation
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "span",
+                                      { staticClass: "font-weight-bold" },
+                                      [_vm._v("Envoyez")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("i", {
+                                      staticClass: "fa fa-long-arrow-right"
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            )
+          ],
           1
         )
       ]),
@@ -40563,136 +41054,33 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "contact block-section image-block bg-white",
-        attrs: { id: "contact" }
-      },
-      [
-        _c("div", { staticClass: "container-fluid container-no-padding" }, [
-          _c("div", { staticClass: "row row-no-margin" }, [
-            _c(
-              "div",
-              { staticClass: "image-block-item col-md-5 col-sm-5 col-xs-12" },
-              [
-                _c("div", {
-                  staticClass:
-                    "map image-block-item-background image-block-item-map",
-                  attrs: { "data-lat": "-7.866315", "data-lng": "110.389574" }
-                })
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container clear" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm"
-              },
-              [
-                _c("form", { staticClass: "contact-form" }, [
-                  _c("p", [
-                    _vm._v(
-                      "Call or submit our online form to request an estimate or for general questions about our services. We look forward to serving you!"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "contact_name" } }, [
-                      _vm._v("Full Name")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control form-bordered",
-                      attrs: { type: "text", id: "contact_name" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-sm-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "form-label",
-                            attrs: { for: "contact_email" }
-                          },
-                          [_vm._v("Email Address")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control form-bordered",
-                          attrs: { type: "email", id: "contact_email" }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "form-label",
-                            attrs: { for: "contact_phone" }
-                          },
-                          [_vm._v("Phone Number")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control form-bordered",
-                          attrs: { type: "number", id: "contact_phone" }
-                        })
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "contact_subject" } }, [
-                      _vm._v("Subject")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control form-bordered",
-                      attrs: { type: "text", id: "contact_subject" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c(
-                      "label",
-                      {
-                        staticClass: "form-label",
-                        attrs: { for: "contact_message" }
-                      },
-                      [_vm._v("Message")]
-                    ),
-                    _vm._v(" "),
-                    _c("textarea", {
-                      staticClass: "form-control form-bordered",
-                      attrs: { rows: "6", id: "contact_message" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "button btn-square",
-                      attrs: { type: "submit" }
-                    },
-                    [_vm._v("Submit")]
-                  )
-                ])
-              ]
-            )
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "container-fluid container-no-padding" }, [
+      _c("div", { staticClass: "row row-no-margin" }, [
+        _c(
+          "div",
+          { staticClass: "image-block-item col-md-5 col-sm-5 col-xs-12" },
+          [
+            _c("div", {
+              staticClass:
+                "map image-block-item-background image-block-item-map",
+              attrs: { "data-lat": "-7.866315", "data-lng": "110.389574" }
+            })
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center padd-20-btm" }, [
+      _c("h2", { staticClass: "groupEdWd-red-color" }, [
+        _vm._v("Vous avez des questions pour vos futures rèalisations?")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("Contactez-nous à travers ce formulaire")])
+    ])
   }
 ]
 render._withStripped = true
@@ -41650,8 +42038,15 @@ var render = function() {
                 [
                   _c(
                     "h3",
-                    { staticClass: "text-center padd-20-btm padd-60-top" },
-                    [_vm._v("Bienvenue sur la Page de Login")]
+                    {
+                      staticClass:
+                        "text-center padd-20-btm padd-60-top groupEdWd-red-color"
+                    },
+                    [
+                      _vm._v(
+                        "Bienvenue sur la Page de\n                        Login"
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -41684,7 +42079,7 @@ var render = function() {
                           attrs: {
                             type: "text",
                             name: "username",
-                            placeholder: "Votre Pseudo ou Adresse e-mail",
+                            placeholder: "Votre Pseudo",
                             id: "username"
                           },
                           domProps: { value: _vm.form.username },
@@ -41768,9 +42163,11 @@ var render = function() {
                             }
                           },
                           [
-                            _vm._v(
-                              "Se\n                                Connecter\n                            "
-                            )
+                            _c("span", { staticClass: "font-weight-bold" }, [
+                              _vm._v("Se Connecter")
+                            ]),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fa fa-long-arrow-right" })
                           ]
                         )
                       ]),
@@ -41876,7 +42273,10 @@ var render = function() {
                 [
                   _c(
                     "h3",
-                    { staticClass: "text-center padd-20-btm padd-60-top" },
+                    {
+                      staticClass:
+                        "text-center padd-20-btm padd-60-top groupEdWd-red-color"
+                    },
                     [_vm._v("Bienvenue sur la Page de Registration")]
                   ),
                   _vm._v(" "),
@@ -41887,7 +42287,7 @@ var render = function() {
                       on: {
                         submit: function($event) {
                           $event.preventDefault()
-                          return _vm.login($event)
+                          return _vm.register($event)
                         }
                       }
                     },
@@ -41907,7 +42307,12 @@ var render = function() {
                             }
                           ],
                           staticClass: "form-control form-bordered",
-                          attrs: { type: "text", name: "name", id: "name" },
+                          attrs: {
+                            type: "text",
+                            name: "name",
+                            placeholder: "Insèrez votre nom complet",
+                            id: "name"
+                          },
                           domProps: { value: _vm.form.name },
                           on: {
                             input: function($event) {
@@ -41938,6 +42343,7 @@ var render = function() {
                           attrs: {
                             type: "text",
                             name: "username",
+                            placeholder: "Insèrez votre Pseudo",
                             id: "username"
                           },
                           domProps: { value: _vm.form.username },
@@ -41971,7 +42377,12 @@ var render = function() {
                             }
                           ],
                           staticClass: "form-control form-bordered",
-                          attrs: { type: "text", name: "email", id: "email" },
+                          attrs: {
+                            type: "text",
+                            name: "email",
+                            placeholder: "Insèrez votre courrier électronique",
+                            id: "email"
+                          },
                           domProps: { value: _vm.form.email },
                           on: {
                             input: function($event) {
@@ -42002,6 +42413,7 @@ var render = function() {
                           attrs: {
                             type: "password",
                             name: "password",
+                            placeholder: "Insèrez votre mot de passe",
                             id: "password"
                           },
                           domProps: { value: _vm.form.password },
@@ -42032,17 +42444,18 @@ var render = function() {
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.form.password,
-                              expression: "form.password"
+                              value: _vm.form.password_confirmation,
+                              expression: "form.password_confirmation"
                             }
                           ],
                           staticClass: "form-control form-bordered",
                           attrs: {
                             type: "password",
                             name: "password_confirmation",
+                            placeholder: "Confirmez votre mot de passe",
                             id: "password_confirmation"
                           },
-                          domProps: { value: _vm.form.password },
+                          domProps: { value: _vm.form.password_confirmation },
                           on: {
                             input: function($event) {
                               if ($event.target.composing) {
@@ -42050,7 +42463,7 @@ var render = function() {
                               }
                               _vm.$set(
                                 _vm.form,
-                                "password",
+                                "password_confirmation",
                                 $event.target.value
                               )
                             }
@@ -42058,21 +42471,34 @@ var render = function() {
                         })
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "button btn-square btn-block",
-                          attrs: { type: "submit" }
-                        },
-                        [_vm._v("Submit")]
-                      ),
+                      _c("div", { staticClass: "form-group padd-20-btm" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-lg btn-warning",
+                            attrs: {
+                              type: "submit",
+                              disabled: !_vm.checkValidation
+                            }
+                          },
+                          [
+                            _c("span", { staticClass: "font-weight-bold" }, [
+                              _vm._v("S' Enregistrer")
+                            ]),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fa fa-long-arrow-right" })
+                          ]
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("hr", { staticClass: "groupEdWd-line-divider" }),
                       _vm._v(" "),
                       _c(
                         "p",
                         [
-                          _vm._v("Vous avez déjà un compte sur le site? "),
+                          _vm._v(
+                            "Vous avez déjà un compte sur le site?\n                            "
+                          ),
                           _c(
                             "router-link",
                             { attrs: { to: { name: "site.login" } } },
@@ -43096,6 +43522,187 @@ var staticRenderFns = [
     )
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("Navbar"),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-center padd-20-btm padd-60-top groupEdWd-red-color"
+              },
+              [_vm._v("Modification Mot de Passe")]
+            ),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "contact-form",
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.changePassword($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "form-group padd-20-btm" }, [
+                  _c("label", { attrs: { for: "old_password" } }, [
+                    _vm._v("Mot de Passe Actuel")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.old_password,
+                        expression: "form.old_password"
+                      }
+                    ],
+                    staticClass: "form-control form-bordered",
+                    attrs: {
+                      type: "password",
+                      name: "old_password",
+                      placeholder: "Insèrez votre mot de passe actuel",
+                      id: "old_password"
+                    },
+                    domProps: { value: _vm.form.old_password },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "old_password", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group padd-20-btm" }, [
+                  _c("label", { attrs: { for: "password" } }, [
+                    _vm._v("Nouveau Mot de Passe")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.password,
+                        expression: "form.password"
+                      }
+                    ],
+                    staticClass: "form-control form-bordered",
+                    attrs: {
+                      type: "password",
+                      name: "password",
+                      placeholder: "Insèrez votre nouveau mot de passe",
+                      id: "password"
+                    },
+                    domProps: { value: _vm.form.password },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "password", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group padd-20-btm" }, [
+                  _c("label", { attrs: { for: "password_confirmation" } }, [
+                    _vm._v("Confirmation Mot de Passe")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.password_confirmation,
+                        expression: "form.password_confirmation"
+                      }
+                    ],
+                    staticClass: "form-control form-bordered",
+                    attrs: {
+                      type: "password",
+                      name: "password_confirmation",
+                      placeholder: "Confirmez votre mot de passe",
+                      id: "password_confirmation"
+                    },
+                    domProps: { value: _vm.form.password_confirmation },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.form,
+                          "password_confirmation",
+                          $event.target.value
+                        )
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group padd-20-btm" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-lg btn-warning",
+                      attrs: { type: "submit", disabled: !_vm.checkValidation }
+                    },
+                    [
+                      _c("span", { staticClass: "font-weight-bold" }, [
+                        _vm._v("Modifier")
+                      ]),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fa fa-long-arrow-right" })
+                    ]
+                  )
+                ])
+              ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("Footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -44170,7 +44777,7 @@ var render = function() {
             _c("div", { staticClass: "col-sm-6 copy-left" }, [
               _c("p", [
                 _vm._v(
-                  "© 2019 - " +
+                  "Copyright © 2019 - " +
                     _vm._s(new Date().getFullYear()) +
                     ". Realisé par "
                 ),
@@ -44179,7 +44786,7 @@ var render = function() {
                   {
                     attrs: {
                       target: "_blank",
-                      href: "https://www.templateshub.net"
+                      href: "https://www.kazoucoin.com/"
                     }
                   },
                   [_vm._v("KazouGroup Srl")]
@@ -44736,11 +45343,14 @@ var render = function() {
                     "router-link",
                     {
                       staticClass: "button",
-                      attrs: { to: { name: "dashboard.index" } }
+                      attrs: { to: { name: "site.login" } }
                     },
                     [
                       _c("i", { staticClass: "fa fa-user-circle" }),
-                      _vm._v(" Zone Privée\n                        ")
+                      _vm._v(" "),
+                      _vm.userConnected
+                        ? _c("span", [_vm._v(_vm._s(_vm.username))])
+                        : _c("span", [_vm._v("Zone Privée")])
                     ]
                   )
                 ],
@@ -61468,6 +62078,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Site/partials/ChangePassword.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/Site/partials/ChangePassword.vue ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true& */ "./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true&");
+/* harmony import */ var _ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChangePassword.vue?vue&type=script&lang=js& */ "./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6b52536a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Site/partials/ChangePassword.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangePassword.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true& ***!
+  \*************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Site/partials/ChangePassword.vue?vue&type=template&id=6b52536a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_6b52536a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/layouts/Dashboard/Footer.vue":
 /*!***************************************************!*\
   !*** ./resources/js/layouts/Dashboard/Footer.vue ***!
@@ -61901,6 +62580,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Site_auth_Login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Site/auth/Login */ "./resources/js/components/Site/auth/Login.vue");
 /* harmony import */ var _components_Site_inc_Error404__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Site/inc/Error404 */ "./resources/js/components/Site/inc/Error404.vue");
 /* harmony import */ var _components_Site_auth_Registration__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Site/auth/Registration */ "./resources/js/components/Site/auth/Registration.vue");
+/* harmony import */ var _components_Site_partials_ChangePassword__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Site/partials/ChangePassword */ "./resources/js/components/Site/partials/ChangePassword.vue");
+
 
 
 
@@ -61922,6 +62603,10 @@ var routes = [{
   path: '/register',
   name: 'site.register',
   component: _components_Site_auth_Registration__WEBPACK_IMPORTED_MODULE_8__["default"]
+}, {
+  path: '/change/password',
+  name: 'site.changePassword',
+  component: _components_Site_partials_ChangePassword__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
   path: '/',
   name: 'site.home',

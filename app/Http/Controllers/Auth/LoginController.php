@@ -12,6 +12,16 @@ use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -88,14 +98,11 @@ class LoginController extends Controller
             ]);
         }
 
-
-
-        if ( ! $user->where('password', bcrypt($request->password))->first() ) {
+        if (!$user->where('password', bcrypt($request->password))->first() ) {
             throw ValidationException::withMessages([
-                $this->username() => Lang::get('auth.username'),
+                $this->username() => Lang::get('auth.password'),
             ]);
         }
-
     }
 
 
@@ -107,13 +114,5 @@ class LoginController extends Controller
 
         return $this->loggedOut($request) ?: redirect('/');
     }
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
+
 }

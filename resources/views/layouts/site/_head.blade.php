@@ -1,4 +1,3 @@
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -21,11 +20,14 @@
 <script>
     window.user = {!! json_encode([
     'user' => auth()->user(),
+    'guest' => auth()->guest(),
+    'authcheck' => auth()->check(),
     ]) !!}
 </script>
 
 <title>{{ config('app.name') }} @yield('title')</title>
 
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 <!-- Bootstrap -->

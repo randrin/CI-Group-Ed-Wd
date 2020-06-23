@@ -54,3 +54,8 @@
 .btn:focus {
     outline: none !important;
 }
+
+/*** Colors ***/
+.groupEdWd-red-color {
+    color: #d12420;
+}
