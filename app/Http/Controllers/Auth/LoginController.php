@@ -6,9 +6,11 @@ use App\Model\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Validation\ValidationException;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LoginController extends Controller
 {
@@ -76,6 +78,7 @@ class LoginController extends Controller
         $request->session()->regenerate();
         $this->clearLoginAttempts($request);
 
+        toastr()->success('<b>Bénéfice mis à jour.</b>', '<button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>');
         return $this->authenticated($request, $this->guard()->user())
             ?: redirect()->intended($this->redirectPath());
     }
@@ -98,7 +101,7 @@ class LoginController extends Controller
             ]);
         }
 
-        if (!$user->where('password', bcrypt($request->password))->first() ) {
+        if (!$user->where('password', bcrypt($request->password))->first()) {
             throw ValidationException::withMessages([
                 $this->username() => Lang::get('auth.password'),
             ]);

@@ -4161,6 +4161,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Navbar",
   data: function data() {
@@ -4193,6 +4202,15 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -43821,7 +43839,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+          _c("div", { staticClass: "col-md-6 col-md-offset-3" }, [
             _c(
               "h2",
               {
@@ -43946,7 +43964,7 @@ var render = function() {
                   })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "form-group padd-20-btm" }, [
+                _c("div", { staticClass: "form-group padd-40-btm" }, [
                   _c(
                     "button",
                     {
@@ -45297,11 +45315,15 @@ var render = function() {
                     [
                       _vm.userConnected
                         ? _c("div", { staticClass: "dropdown" }, [
-                            _c("div", { staticClass: "button" }, [
-                              _c("i", { staticClass: "fa fa-user-circle" }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v(_vm._s(_vm.username))])
-                            ]),
+                            _c(
+                              "div",
+                              { staticClass: "groupEdWd-button button" },
+                              [
+                                _c("i", { staticClass: "fa fa-user-circle" }),
+                                _vm._v(" "),
+                                _c("span", [_vm._v(_vm._s(_vm.username))])
+                              ]
+                            ),
                             _vm._v(" "),
                             _c(
                               "div",
@@ -45312,20 +45334,29 @@ var render = function() {
                                   {
                                     attrs: { to: { name: "dashboard.index" } }
                                   },
-                                  [_vm._v("Dashboard")]
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa fa-dashboard groupEdWd-dropdown-icon"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass: "groupEdWd-dropdown-link"
+                                      },
+                                      [_vm._v("Dashboard")]
+                                    )
+                                  ]
                                 ),
                                 _vm._v(" "),
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Mon Profil")
-                                ]),
+                                _vm._m(2),
                                 _vm._v(" "),
                                 _c("a", { attrs: { href: "#" } }, [
                                   _vm._v("Link 3")
                                 ]),
                                 _vm._v(" "),
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Se Déconnecter")
-                                ])
+                                _vm._m(3)
                               ],
                               1
                             )
@@ -45362,7 +45393,7 @@ var render = function() {
           [
             _c("div", { staticClass: "container" }, [
               _c("div", { staticClass: "row margin-row" }, [
-                _vm._m(2),
+                _vm._m(4),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-sm-9" }, [
                   _c(
@@ -45372,7 +45403,7 @@ var render = function() {
                       attrs: { id: "site-navigation", role: "navigation" }
                     },
                     [
-                      _vm._m(3),
+                      _vm._m(5),
                       _vm._v(" "),
                       _c(
                         "div",
@@ -45388,7 +45419,7 @@ var render = function() {
                               }
                             },
                             [
-                              _vm._m(4),
+                              _vm._m(6),
                               _vm._v(" "),
                               _c(
                                 "li",
@@ -45419,7 +45450,7 @@ var render = function() {
                                     [_c("span", [_vm._v("Nos Services")])]
                                   ),
                                   _vm._v(" "),
-                                  _vm._m(5)
+                                  _vm._m(7)
                                 ],
                                 1
                               ),
@@ -45505,6 +45536,30 @@ var staticRenderFns = [
           },
           [_c("i", { staticClass: "fa fa-envelope-o" })]
         )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("i", { staticClass: "fa fa-user-circle groupEdWd-dropdown-icon" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "groupEdWd-dropdown-link" }, [
+        _vm._v("Mon Profil")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "/user/logout" } }, [
+      _c("i", { staticClass: "fa fa-sign-out groupEdWd-dropdown-icon" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "groupEdWd-dropdown-link" }, [
+        _vm._v("Se Déconnecter")
       ])
     ])
   },
@@ -45666,20 +45721,27 @@ var render = function() {
                             _c(
                               "router-link",
                               { attrs: { to: { name: "dashboard.index" } } },
-                              [_vm._v("Dashboard")]
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "fa fa-dashboard groupEdWd-dropdown-icon"
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  { staticClass: "groupEdWd-dropdown-link" },
+                                  [_vm._v("Dashboard")]
+                                )
+                              ]
                             ),
                             _vm._v(" "),
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Mon Profil")
-                            ]),
+                            _vm._m(2),
                             _vm._v(" "),
                             _c("a", { attrs: { href: "#" } }, [
                               _vm._v("Link 3")
                             ]),
                             _vm._v(" "),
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Se Déconnecter")
-                            ])
+                            _vm._m(3)
                           ],
                           1
                         )
@@ -45714,7 +45776,7 @@ var render = function() {
           [
             _c("div", { staticClass: "container" }, [
               _c("div", { staticClass: "row margin-row" }, [
-                _vm._m(2),
+                _vm._m(4),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-sm-9" }, [
                   _c(
@@ -45724,7 +45786,7 @@ var render = function() {
                       attrs: { id: "site-navigation", role: "navigation" }
                     },
                     [
-                      _vm._m(3),
+                      _vm._m(5),
                       _vm._v(" "),
                       _c(
                         "div",
@@ -45740,7 +45802,7 @@ var render = function() {
                               }
                             },
                             [
-                              _vm._m(4),
+                              _vm._m(6),
                               _vm._v(" "),
                               _c(
                                 "li",
@@ -45771,7 +45833,7 @@ var render = function() {
                                     [_c("span", [_vm._v("Nos Services")])]
                                   ),
                                   _vm._v(" "),
-                                  _vm._m(5)
+                                  _vm._m(7)
                                 ],
                                 1
                               ),
@@ -45816,7 +45878,7 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm._m(6)
+      _vm._m(8)
     ]
   )
 }
@@ -45859,6 +45921,30 @@ var staticRenderFns = [
           },
           [_c("i", { staticClass: "fa fa-envelope-o" })]
         )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _c("i", { staticClass: "fa fa-user-circle groupEdWd-dropdown-icon" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "groupEdWd-dropdown-link" }, [
+        _vm._v("Mon Profil")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "/user/logout" } }, [
+      _c("i", { staticClass: "fa fa-sign-out groupEdWd-dropdown-icon" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "groupEdWd-dropdown-link" }, [
+        _vm._v("Se Déconnecter")
       ])
     ])
   },

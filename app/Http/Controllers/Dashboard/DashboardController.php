@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -13,11 +12,8 @@ class DashboardController extends Controller
      *
      * @return void
      */
-    private $auth;
-
-    public function __construct(Guard $auth){
+    public function __construct(){
         $this->middleware('auth');
-        $this->auth = $auth;
     }
 
     public function index()

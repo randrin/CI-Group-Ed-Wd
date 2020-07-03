@@ -51,6 +51,12 @@
 .groupEdWd-line-divider {
     border-top-color: #ffa800;
 }
+.groupEdWd-dropdown-link {
+    font-size: 15px;
+}
+.groupEdWd-dropdown-icon {
+    font-size: 15px;
+}
 .btn:focus {
     outline: none !important;
 }
@@ -58,6 +64,9 @@
     left: 5px;
     position: relative;
     transition: all .1s linear;
+}
+.groupEdWd-button {
+    background-color: #ffa800 !important;
 }
 
 .dropdown {
@@ -77,7 +86,7 @@
 
 .dropdown-content a {
     color: #2b2b2b;
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
 }

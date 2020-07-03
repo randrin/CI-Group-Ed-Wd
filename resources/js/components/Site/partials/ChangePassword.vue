@@ -3,7 +3,7 @@
         <Navbar/>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-6 col-md-offset-3">
                     <h2 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Modification Mot de Passe</h2>
                     <form @submit.prevent="changePassword" class="contact-form">
                         <div class="form-group padd-20-btm">
@@ -23,7 +23,7 @@
                                    class="form-control form-bordered" placeholder="Confirmez votre mot de passe"
                                    id="password_confirmation">
                         </div>
-                        <div class="form-group padd-20-btm">
+                        <div class="form-group padd-40-btm">
                             <button type="submit" :disabled="!checkValidation" class="btn btn-lg btn-warning">
                                 <span class="font-weight-bold">Modifier</span>
                                 <i class="fa fa-long-arrow-right"></i>

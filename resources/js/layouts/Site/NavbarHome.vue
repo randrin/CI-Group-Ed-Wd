@@ -25,10 +25,19 @@
                                     <span>{{username}}</span>
                                 </div>
                                 <div class="dropdown-content">
-                                    <router-link :to="{name: 'dashboard.index' }">Dashboard</router-link>
-                                    <a href="#">Mon Profil</a>
+                                    <router-link :to="{name: 'dashboard.index' }">
+                                        <i class="fa fa-dashboard groupEdWd-dropdown-icon"></i>
+                                        <span class="groupEdWd-dropdown-link">Dashboard</span>
+                                    </router-link>
+                                    <a href="#">
+                                        <i class="fa fa-user-circle groupEdWd-dropdown-icon"></i>
+                                        <span class="groupEdWd-dropdown-link">Mon Profil</span>
+                                    </a>
                                     <a href="#">Link 3</a>
-                                    <a href="#">Se Déconnecter</a>
+                                    <a href="/user/logout">
+                                        <i class="fa fa-sign-out groupEdWd-dropdown-icon"></i>
+                                        <span class="groupEdWd-dropdown-link">Se Déconnecter</span>
+                                    </a>
                                 </div>
                             </div>
                             <router-link :to="{name: 'site.login' }" v-else class="button">

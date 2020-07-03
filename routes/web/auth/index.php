@@ -1,6 +1,6 @@
 <?php
     Route::group(['namespace' => 'Auth','middleware' => 'web'], function () {
-    Route::get('user/logout', 'LoginController@logout')->name('logout');
+    Route::get('user/logout', 'LoginController@logout')->name('groupEdWd.logout');
 
     // Social Auth
     Route::get('oauth/{driver}', 'SocialAuthController@redirectToProvider')->name('social.oauth');
