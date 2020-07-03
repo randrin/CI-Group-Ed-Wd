@@ -13,13 +13,26 @@
                             <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
                             <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+                            <a href="mailto:groupEdWd-assistance@gmail.com" class="nav-item"><i class="fa fa-envelope-o"></i></a>
                         </div>
                     </div>
                     <div class="col-sm-3 hidden-xs">
                         <div class="nav-utility nav-right">
-                            <router-link :to="{name: 'dashboard.index' }" class="button button-navbar"><i
-                                    class="fa fa-user-circle"></i> Zone Privée
+                            <div class="dropdown" v-if="userConnected">
+                                <div class="button">
+                                    <i class="fa fa-user-circle"></i>
+                                    <span>{{username}}</span>
+                                </div>
+                                <div class="dropdown-content">
+                                    <router-link :to="{name: 'dashboard.index' }">Dashboard</router-link>
+                                    <a href="#">Mon Profil</a>
+                                    <a href="#">Link 3</a>
+                                    <a href="#">Se Déconnecter</a>
+                                </div>
+                            </div>
+                            <router-link :to="{name: 'site.login' }" v-else class="button button-navbar">
+                                <i class="fa fa-user-circle"></i>
+                                <span>Zone Privée</span>
                             </router-link>
                         </div>
                     </div>
@@ -122,10 +135,31 @@
 
 <script>
     export default {
-        name: "Navbar"
+        name: "Navbar",
+        data() {
+            return {
+                userConnected: false,
+                username: '',
+            }
+        },
+        created() {
+            this.getInfosUserConnected();
+        },
+        methods: {
+            getInfosUserConnected() {
+                if (window.user.user !== null) {
+                    this.username = window.user.user.username;
+                    this.userConnected = this.username !== null ? true : false;
+                }
+            }
+        }
     }
 </script>
 
 <style scoped>
-
+.button.button-navbar {
+    color: #fff !important;
+    border-color: #ffa800 !important;
+    background-color: #ffa800 !important;
+}
 </style>

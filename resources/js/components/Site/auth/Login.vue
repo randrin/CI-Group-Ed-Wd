@@ -81,6 +81,7 @@
                 axios.post('/login', this.form)
                     .then((response) => {
                         this.$router.push('/');
+                        location.reload();
                     })
                     .catch((error) => {
                         this.errors = error.response.data.errors;

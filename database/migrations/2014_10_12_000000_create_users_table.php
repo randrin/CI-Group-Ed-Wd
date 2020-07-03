@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('status_user')->nullable()->default('0');
             $table->string('avatar')->nullable()->default('/assets/images/default-avatar.png');
             $table->string('avatarcover')->nullable()->default('/assets/images/image_placeholder.jpg');
+            $table->string('phone')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

@@ -25,5 +25,11 @@
         "vue-template-compiler": "^2.6.10",
         "vuetify": "^2.2.8"
     },
-    "dependencies": []
+    "dependencies": {
+        "animate.css": "^3.7.2",
+        "select2": "^4.0.12",
+        "sweetalert2": "^9.3.1",
+        "toastr": "^2.1.4",
+        "vue-progressbar": "^0.7.5"
+    }
 }

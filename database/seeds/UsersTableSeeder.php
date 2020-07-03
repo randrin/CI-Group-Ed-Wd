@@ -19,6 +19,9 @@ class UsersTableSeeder extends Seeder
         if (config('app.env') !== 'production') {
             $this->addTestUtenti();
         }
+
+        // Fake Users Data
+        factory(User::class, 5)->create();
     }
 
     private function addDefaultUtenti()
@@ -31,7 +34,8 @@ class UsersTableSeeder extends Seeder
         User::create([
             'username' =>'bokino12',
             'name' =>'Boclair Temgoua',
-            'status_user' => 'active',
+            'status_user' => '1',
+            'phone' => "32698574698",
             'email' => "temgoua2012@gmail.com",
             "password" => bcrypt('0000000'),
             'created_at' => now(),
@@ -40,8 +44,9 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             'username' =>'randrino17',
-            'name' =>'Nzeukang',
-            'status_user' => 'active',
+            'name' =>'Nzeukang Nimpa',
+            'phone' => "32698574698",
+            'status_user' => '1',
             'email' => "nzeukangrandrin@gmail.com",
             "password" => bcrypt('123456789'),
             'created_at' => now(),
@@ -54,8 +59,9 @@ class UsersTableSeeder extends Seeder
         // Seeds
         User::create([
             'username' =>'patrick96',
-            'name' =>'Darry',
-            'status_user' =>'active',
+            'name' =>'Darry Noubissi',
+            'status_user' =>'0',
+            'phone' => "32698574698",
             'email' => "darrytafeng@gmail.com",
             "password" => bcrypt('0000000'),
             'created_at' => now(),

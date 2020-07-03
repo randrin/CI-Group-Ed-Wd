@@ -23,6 +23,8 @@
 <script src="{{ mix('/js/app.js') }}"></script>
 <!-- JavaScript Group Ed & Wd -->
 <script src="/assets/js/groupEdWd.js"></script>
+
+{!! Toastr::message() !!}
 @section('scripts')
 
 @show

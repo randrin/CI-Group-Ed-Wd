@@ -18,29 +18,29 @@
                         <h3 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Bienvenue sur la Page de Registration</h3>
                         <form @submit.prevent="register" class="contact-form">
                             <div class="form-group padd-20-btm">
-                                <label for="name">Nom et Prènom</label>
+                                <label for="name">Nom et Prènom <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.name" name="name" class="form-control form-bordered"
                                        placeholder="Insèrez votre nom complet" id="name">
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="username">Username</label>
+                                <label for="username">Username <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.username" name="username"
                                        class="form-control form-bordered" placeholder="Insèrez votre Pseudo"
                                        id="username">
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="email">Adresse Email</label>
+                                <label for="email">Adresse Email <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.email" name="email" class="form-control form-bordered"
                                        placeholder="Insèrez votre courrier électronique" id="email">
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="password">Mot De Passe</label>
+                                <label for="password">Mot De Passe <span class="groupEdWd-required">*</span></label>
                                 <input type="password" v-model="form.password" name="password"
                                        class="form-control form-bordered" placeholder="Insèrez votre mot de passe"
                                        id="password">
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="password_confirmation">Confirmation Mot De Passe</label>
+                                <label for="password_confirmation">Confirmation Mot De Passe <span class="groupEdWd-required">*</span></label>
                                 <input type="password" v-model="form.password_confirmation" name="password_confirmation"
                                        class="form-control form-bordered" placeholder="Confirmez votre mot de passe"
                                        id="password_confirmation">
@@ -52,7 +52,7 @@
                                 </button>
                             </div>
                             <hr class="groupEdWd-line-divider"/>
-                            <p>Vous avez déjà un compte sur le site?
+                            <p class="text-center">Vous avez déjà un compte sur le site?
                                 <router-link :to="{ name: 'site.login' }"><span>Connectez-vous</span></router-link>
                             </p>
                         </form>
@@ -90,7 +90,11 @@
         },
         methods: {
             register() {
-
+                axios.post('/register', this.form)
+                    .then((response) => {
+                        console.log(response)
+                    })
+                    .catch((error) => console.log(error.response))
             }
         }
     }

@@ -3,17 +3,32 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
+use App\Model\Contact;
+use App\Services\ContactService;
 
 class ContactController extends Controller
 {
     /**
-     * Show the application dashboard.
+     * Create a new controller instance.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return void
      */
+
+    public function __construct(){
+        $this->middleware('auth', ['except' => ['index']]);
+    }
+
     public function index()
     {
         return view('site.contact');
+    }
+
+    public function send(ContactRequest $request)
+    {
+        $contact = ContactService::setContactValues($request, new Contact());
+        $contact->save();
+
+        toastr()->success('<b>Bénéfice mis à jour.</b>', '<button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>');
     }
 }
