@@ -2209,7 +2209,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var _this = this;
 
       this.$Progress.start();
-      axios.post("contact-message", this.form).then(function (response) {
+      axios.post("/contact-us/send", this.form).then(function (response) {
         _this.errors = [];
         _this.form = [];
       })["catch"](function (error) {

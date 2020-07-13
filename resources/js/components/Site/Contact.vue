@@ -161,7 +161,7 @@
         methods: {
             contact() {
                 this.$Progress.start();
-                axios.post("contact-message", this.form).then((response) => {
+                axios.post("/contact-us/send", this.form).then((response) => {
                     this.errors = [];
                     this.form = [];
                 })
