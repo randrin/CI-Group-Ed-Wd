@@ -1,5 +1,6 @@
 @extends('inc.site.main')
-@section('title', '| Groupe Ed-Wd')
+<?php $item = htmlspecialchars(config('app.name'));?>
+@section('title', 'Groupe Ed-Wd | '.$item)
 
 @section('style')
 

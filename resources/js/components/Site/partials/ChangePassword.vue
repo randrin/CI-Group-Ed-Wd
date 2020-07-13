@@ -1,5 +1,6 @@
 <template>
     <div>
+        <vue-progress-bar />
         <Navbar/>
         <div class="container">
             <div class="row">

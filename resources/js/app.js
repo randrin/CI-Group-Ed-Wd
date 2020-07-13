@@ -19,6 +19,16 @@ const router = new VueRouter({
     linkActiveClass: "active"
 });
 
+
+import {Form, HasError, AlertError, AlertSuccess} from 'vform'
+
+window.Form = Form;
+
+Vue.component(HasError.name, HasError);
+Vue.component(AlertError.name, AlertError);
+Vue.component(AlertSuccess.name, AlertSuccess);
+
+
 import VueProgressBar from 'vue-progressbar';
 Vue.use(VueProgressBar, {
     color: 'rgba(220,19,15,1)',

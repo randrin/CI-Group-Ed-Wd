@@ -12,7 +12,8 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::view('/{any}', 'index');
+//Route::view('/{any}', 'index');
+
 
 Auth::routes(['verify' => true]);
 

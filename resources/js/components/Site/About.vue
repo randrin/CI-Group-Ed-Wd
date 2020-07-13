@@ -62,6 +62,7 @@
         name: "About",
         components: {Expertise, Navbar, Footer, Team, Expertise},
         data(){
+            document.title = `À propos de nous | ${this.name_site}`;
             return {
 
             }

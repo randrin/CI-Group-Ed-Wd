@@ -22,6 +22,7 @@
     'user' => auth()->user(),
     'guest' => auth()->guest(),
     'authcheck' => auth()->check(),
+    'name_site' => htmlspecialchars(config('app.name')),
     ]) !!}
 </script>
 

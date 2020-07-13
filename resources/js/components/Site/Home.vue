@@ -1,5 +1,6 @@
 <template>
     <div>
+        <vue-progress-bar />
         <NavbarHome/>
         <InformationsContact />
         <h4>Home Component</h4>
@@ -22,7 +23,13 @@
 
     export default {
         name: "Home",
-        components: {Subscribe, NavbarHome, Footer, Subscribe, InformationsContact, Informations, Clients, Valeurs}
+        components: {Subscribe, NavbarHome, Footer, Subscribe, InformationsContact, Informations, Clients, Valeurs},
+         data() {
+            document.title = `Groupe Ed-Wd | ${this.name_site}`;
+            return {
+                //
+            }
+        },
     }
 </script>
 

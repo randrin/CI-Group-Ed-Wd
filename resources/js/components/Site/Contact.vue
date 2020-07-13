@@ -1,5 +1,6 @@
 <template>
     <div>
+        <vue-progress-bar />
         <Navbar/>
         <div class="main-title block-section padd-100-top padd-100-btm bg-grey">
             <div class="container">
@@ -138,6 +139,7 @@
         name: "Contact",
         components: {InformationsContact, Navbar, Footer, InformationsContact},
         data() {
+            document.title = `Nous Contactez | ${this.name_site}`;
             return {
                 form: {
                     contact_name: '',
