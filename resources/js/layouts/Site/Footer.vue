@@ -12,20 +12,20 @@
 
                     <div class="col-md-3 col-sm-6 col-sm-offset-0">
                         <section class="widget">
-                            <h3 class="widget-title">Qui sommes-nous?</h3>
+                            <h3 class="groupEdWd-footer-title widget-title">Qui sommes-nous?</h3>
                             <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Selected Work</a></li>
-                                <li><a href="#">Get in touch</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="/about">A' Propos de Nous</a></li>
+                                <li><a href="/nos-services">Nos Expertises</a></li>
+                                <li><a href="/nos-projects">Nos Projects</a></li>
+                                <li><a href="/blogs">Notre Blog</a></li>
+                                <li><a href="/faqs">Faqs</a></li>
                             </ul>
                         </section>
                     </div>
 
                     <div class="col-md-3 col-sm-6">
                         <section class="widget">
-                            <h3 class="widget-title">Nos Services</h3>
+                            <h3 class="groupEdWd-footer-title widget-title">Nos Services</h3>
                             <ul>
                                 <li><a href="#">Metal Roofting</a></li>
                                 <li><a href="#">Green Building</a></li>
@@ -38,9 +38,13 @@
 
                     <div class="col-md-3 col-sm-6">
                         <section class="widget">
-                            <h3 class="widget-title">Nous Contactez</h3>
+                            <h3 class="groupEdWd-footer-title widget-title">Nous Contactez</h3>
                             <p>5252 E Walnut Ave, Orange, California, United States.</p>
                             <p>hello@construction.me<br>+62 (0) 274 441 5005</p>
+                            <ul>
+                                <li><a href="/contact-us">Laissez nous un message</a></li>
+                                <li><a href="#">Green Building</a></li>
+                            </ul>
                         </section>
                     </div>
                 </div>

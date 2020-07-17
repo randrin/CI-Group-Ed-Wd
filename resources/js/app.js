@@ -5,12 +5,14 @@
  */
 
 import { routes } from "./routes/routes";
+import VueRouter from 'vue-router'
+import { AlertError, AlertSuccess, Form, HasError } from 'vform'
+import VueProgressBar from 'vue-progressbar';
 
 require('./bootstrap');
 
 window.Vue = require('vue');
 
-import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -20,8 +22,6 @@ const router = new VueRouter({
 });
 
 
-import {Form, HasError, AlertError, AlertSuccess} from 'vform'
-
 window.Form = Form;
 
 Vue.component(HasError.name, HasError);
@@ -29,9 +29,8 @@ Vue.component(AlertError.name, AlertError);
 Vue.component(AlertSuccess.name, AlertSuccess);
 
 
-import VueProgressBar from 'vue-progressbar';
 Vue.use(VueProgressBar, {
-    color: 'rgba(220,19,15,1)',
+    color: 'rgba(209,36,32,1)',
     failedColor: 'red',
     thickness: '4px',
     height: '2px',

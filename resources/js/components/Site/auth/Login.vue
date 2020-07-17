@@ -1,6 +1,6 @@
 <template>
     <div>
-         <vue-progress-bar />
+        <vue-progress-bar/>
         <Navbar/>
         <div id="contact" class="contact block-section image-block bg-white">
             <div class="container-fluid container-no-padding">
@@ -19,18 +19,21 @@
                             Login</h3>
                         <form @submit.prevent="login()" @keydown="form.onKeydown($event)" class="contact-form">
                             <div class="form-group padd-20-btm">
-                                <label for="username">Identifiant</label>
+                                <label for="username">Identifiant <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.username" name="username"
                                        placeholder="Votre Pseudo" class="form-control form-bordered"
                                        id="username">
-                                        <has-error :form="form" field="username"/>
+                                <has-error :form="form" field="username"/>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="password">Mot De Passe</label>
-                                <input type="password" v-model="form.password" name="password"
+                                <label for="password">Mot De Passe <span class="groupEdWd-required">*</span></label>
+                                <input :type="passwordType" name="password" v-model="form.password"
                                        placeholder="Votre mot de passe" class="form-control form-bordered"
                                        id="password">
-                                         <has-error :form="form" field="password"/>
+                                <div @click="showRidePwd" class="groupEdWd-container-show-ride-pwd">
+                                    <i :class="getPasswordIcon()"></i>
+                                </div>
+                                <has-error :form="form" field="password"/>
                                 <p class="text-right">
                                     <router-link :to="{ name: 'site.register' }">
                                         <span>J'ai oublié mon mot de passe</span>
@@ -38,7 +41,8 @@
                                 </p>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <button type="submit" :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning">
+                                <button :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning"
+                                        type="submit">
                                     <span class="font-weight-bold">Se Connecter</span>
                                     <i class="fa fa-long-arrow-right"></i>
                                 </button>
@@ -72,6 +76,8 @@
                     username: '',
                     password: '',
                 }),
+                passwordType: 'password',
+                errors: []
             };
         },
         computed: {
@@ -80,22 +86,50 @@
             }
         },
         methods: {
+            showRidePwd() {
+                this.passwordType = (this.passwordType === 'password' ? 'text' : 'password');
+                this.getPasswordIcon();
+            },
+            getPasswordIcon() {
+                return (this.passwordType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash');
+            },
             login() {
-                 this.$Progress.start();
+                this.$Progress.start();
                 this.form.busy = true;
-                // Submit the form via a POST request
                 this.form.post('/login')
                     .then((response) => {
-                        //this.$router.push('/');
-                        //location.reload();
 
-                        console.log(response);
+
+                        setTimeout(function () {
+                            let notify = $.notify('<strong>Please wait a moment...</strong> ...', {
+                                allow_dismiss: false,
+                                showProgressbar: true,
+                                placement: {
+                                    align: 'right'
+                                }
+                            });
+                            notify.update({
+                                'type': 'success',
+                                'message': '<strong>Welcome back.</strong>',
+                                'progress': 75
+                            });
+                            this.$router.push('/');
+                            location.reload(); // Pour faire le refresh de la page, changer le javascript
+                            //location.reload(true);
+                        }, 2000);
+
+                        this.$Progress.finish();
                     })
                     .catch((error) => {
-                        this.errors = error.response.data.errors;
-                        console.log(this.errors);
+                        this.$Progress.fail();
+                        console.log(error.response);
+                        toastr.error('The information is incorrect', '', {timeOut: 5000})
                     })
             }
+        },
+        created() {
+            this.$Progress.start();
+            this.$Progress.finish();
         }
     }
 </script>

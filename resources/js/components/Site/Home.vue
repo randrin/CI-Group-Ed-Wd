@@ -30,6 +30,10 @@
                 //
             }
         },
+        created() {
+            this.$Progress.start();
+            this.$Progress.finish();
+        }
     }
 </script>
 

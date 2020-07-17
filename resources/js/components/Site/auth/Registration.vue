@@ -1,6 +1,6 @@
 <template>
     <div>
-         <vue-progress-bar />
+        <vue-progress-bar/>
         <Navbar/>
         <div id="contact" class="contact block-section image-block bg-white">
             <div class="container-fluid container-no-padding">
@@ -22,34 +22,41 @@
                                 <label for="name">Nom et Prènom <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.name" name="name" class="form-control form-bordered"
                                        placeholder="Insèrez votre nom complet" id="name">
-                              <has-error :form="form" field="name"/>
+                                <has-error :form="form" field="name"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="username">Username <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.username" name="username"
                                        class="form-control form-bordered" placeholder="Insèrez votre Pseudo"
                                        id="username">
-                               <has-error :form="form" field="username"/>
+                                <has-error :form="form" class="groupEdWd-required" field="username"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="email">Adresse Email <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.email" name="email" class="form-control form-bordered"
                                        placeholder="Insèrez votre courrier électronique" id="email">
-                              <has-error :form="form" field="email"/>
+                                <has-error :form="form" class="groupEdWd-required" field="email"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="password">Mot De Passe <span class="groupEdWd-required">*</span></label>
-                                <input type="password" v-model="form.password" name="password"
+                                <input :type="passwordType" name="password" v-model="form.password"
                                        class="form-control form-bordered" placeholder="Insèrez votre mot de passe"
                                        id="password">
-                              <has-error :form="form" field="password"/>
+                                <div @click="showRidePwd" class="groupEdWd-container-show-ride-pwd">
+                                    <i :class="getPasswordIcon()"></i>
+                                </div>
+                                <has-error :form="form" class="groupEdWd-required" field="password"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="password_confirmation">Confirmation Mot De Passe <span class="groupEdWd-required">*</span></label>
-                                <input type="password" v-model="form.password_confirmation" name="password_confirmation"
+                                <input :type="password_confirmationType" name="password_confirmation"
+                                       v-model="form.password_confirmation"
                                        class="form-control form-bordered" placeholder="Confirmez votre mot de passe"
                                        id="password_confirmation">
-                              <has-error :form="form" field="password_confirmation"/>
+                                <div @click="showRideConfirmationPwd" class="groupEdWd-container-show-ride-pwd">
+                                    <i :class="getConfirmationPasswordIcon()"></i>
+                                </div>
+                                <has-error :form="form" class="groupEdWd-required" field="password_confirmation"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <button type="submit" :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning">
@@ -78,15 +85,17 @@
         name: "Registration",
         components: {Footer, Navbar},
         data() {
-           document.title = `Inscription | ${this.name_site}`;
+            //document.title = `Inscription | ${this.name_site}`;
             return {
-                 form: new Form({
-                   name: '',
+                form: new Form({
+                    name: '',
                     username: '',
                     email: '',
                     password: '',
                     password_confirmation: ''
                 }),
+                passwordType: 'password',
+                password_confirmationType: 'password'
             }
         },
         computed: {
@@ -96,17 +105,29 @@
             }
         },
         methods: {
+            showRidePwd() {
+                this.passwordType = (this.passwordType === 'password' ? 'text' : 'password');
+                this.getPasswordIcon();
+            },
+            showRideConfirmationPwd() {
+                this.password_confirmationType = (this.password_confirmationType === 'password' ? 'text' : 'password');
+                this.getConfirmationPasswordIcon();
+            },
+            getPasswordIcon() {
+                return (this.passwordType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash');
+            },
+            getConfirmationPasswordIcon() {
+                return (this.password_confirmationType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash');
+            },
             register() {
                 this.$Progress.start();
                 this.form.busy = true;
-                // Submit the form via a POST request
                 this.form.post('register')
                     .then((response) => {
                         console.log(response)
                     }).catch((error) => {
-                    //Failled message
                     this.$Progress.fail();
-                    console.log(error.response)
+                    console.log(error.response);
                     $.notify("Ooop! Something wrong. Try later", {
                         type: 'danger',
                         animate: {

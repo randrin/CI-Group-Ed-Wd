@@ -74,14 +74,14 @@
                                     <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
                                         <li class="menu-item current-menu-item"><a href="/">Accueil</a></li>
                                         <li class="menu-item">
-                                            <router-link :to="{ name: 'site.about' }">
+                                            <a href="/about">
                                                 <span>A' Propos</span>
-                                            </router-link>
+                                            </a>
                                         </li>
                                         <li class="menu-item menu-item-has-children" aria-haspopup="true">
-                                            <router-link :to="{ name: 'site.services' }">
+                                            <a href="/nos-services">
                                                 <span>Nos Services</span>
-                                            </router-link>
+                                            </a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item current-menu-item"><a href="service.html">Tous nos
                                                     Services</a></li>
@@ -98,9 +98,9 @@
                                             </ul>
                                         </li>
                                         <li class="menu-item">
-                                            <router-link :to="{ name: 'site.projects' }">
+                                            <a href="/nos-projects">
                                                 <span>Nos Projects</span>
-                                            </router-link>
+                                            </a>
                                         </li>
                                         <!--<li class="menu-item menu-item-has-children" aria-haspopup="true">
                                             <a href="#">Features</a>
@@ -127,9 +127,9 @@
                                         </li>-->
                                         <!--<li class="menu-item"><a href="blog.html">Blog</a></li>-->
                                         <li class="menu-item">
-                                            <router-link :to="{name: 'site.contact' }">
+                                            <a href="/contact-us">
                                                 <span>Nous Contactez</span>
-                                            </router-link>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

@@ -5,7 +5,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="main-title-primary">404 Page non Trouvée</h1>
+                        <h1 class="main-title-primary groupEdWd-red-color">404</h1>
+                        <h1 class="main-title-primary groupEdWd-red-color">Page non Trouvée</h1>
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@
                                                 <form class="search-form">
                                                     <div class="form-group">
                                                         <label for="search" class="sr-only">Search</label>
-                                                        <input type="text" class="form-control search-field"
+                                                        <input class="form-control search-field" id="search" type="text"
                                                                placeholder="Search...">
                                                     </div>
                                                     <button type="submit" class="btn btn-default search-submit"><i

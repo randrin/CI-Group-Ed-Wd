@@ -1,5 +1,6 @@
 <template>
     <div>
+        <vue-progress-bar/>
         <Navbar/>
         <div class="main-title block-section padd-100-top padd-100-btm bg-grey">
             <div class="container">
@@ -68,12 +69,14 @@
             }
 
         },
-        created() {
-            this.loadData();
-        },
         methods: {
             loadData() {
             }
+        },
+        created() {
+            this.$Progress.start();
+            this.loadData();
+            this.$Progress.finish();
         }
     }
 </script>
