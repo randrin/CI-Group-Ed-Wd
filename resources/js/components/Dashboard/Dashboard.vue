@@ -1,8 +1,9 @@
 <template>
     <div class="wrapper">
-        <Navbar />
+        <vue-progress-bar/>
+        <Navbar/>
         <div class="main-panel" id="main-panel">
-            <NavTop />
+            <NavTop/>
             <Footer></Footer>
         </div>
     </div>
@@ -12,9 +13,23 @@
     import NavTop from "../../layouts/Dashboard/NavTop";
     import Navbar from "../../layouts/Dashboard/Navbar";
     import Footer from "../../layouts/Dashboard/Footer";
+
     export default {
         name: "Dashboard",
-        components: {NavTop, Navbar, Footer}
+        components: {NavTop, Navbar, Footer},
+        data() {
+
+        },
+        methods: {
+            loadData() {
+                //
+            }
+        },
+        created() {
+            this.$Progress.start();
+            this.loadData();
+            this.$Progress.finish();
+        }
     }
 </script>
 

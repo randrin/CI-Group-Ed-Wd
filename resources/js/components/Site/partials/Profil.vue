@@ -2,7 +2,16 @@
     <div>
         <vue-progress-bar/>
         <Navbar/>
-        <Footer />
+        <div>
+            <a href="single.html" class="popular-entry-thumbnail">
+                <img src="assets/img/img-blog-02.jpg" alt="Make your own library corner in your home">
+            </a>
+            <span class="popular-entry-title">
+                        <a href="single.html" rel="bookmark" class="popular-entry-title-link">Make your own library corner in your home</a>
+                        <span class="popular-entry-date">July 23, 2016</span>
+                      </span>
+        </div>
+        <Footer/>
     </div>
 </template>
 
@@ -12,13 +21,23 @@
 
     export default {
         name: "Profil",
-        components: { Navbar, Footer},
+        components: {Navbar, Footer},
         data() {
-
+            return {
+                user: {},
+                errors: []
+            }
         },
         methods: {
             loadData() {
-                //
+                axios.get('/profil')
+                    .then((response) => {
+                        this.user = response.data;
+                        console.log('User: ', response.data);
+                    })
+                    .catch((error) => {
+                        this.errors = error.response.data;
+                    })
             }
         },
         created() {

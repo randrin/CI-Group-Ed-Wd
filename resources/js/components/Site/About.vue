@@ -67,10 +67,10 @@
             return {
 
             }
-
         },
         methods: {
             loadData() {
+                //
             }
         },
         created() {

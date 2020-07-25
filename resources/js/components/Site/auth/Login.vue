@@ -35,7 +35,7 @@
                                 </div>
                                 <has-error :form="form" field="password"/>
                                 <p class="text-right">
-                                    <router-link :to="{ name: 'site.register' }">
+                                    <router-link :to="{ name: 'site.resetPassword' }">
                                         <span>J'ai oublié mon mot de passe</span>
                                     </router-link>
                                 </p>
@@ -98,8 +98,6 @@
                 this.form.busy = true;
                 this.form.post('/login')
                     .then((response) => {
-
-
                         setTimeout(function () {
                             let notify = $.notify('<strong>Please wait a moment...</strong> ...', {
                                 allow_dismiss: false,
@@ -117,12 +115,12 @@
                             location.reload(); // Pour faire le refresh de la page, changer le javascript
                             //location.reload(true);
                         }, 2000);
-
                         this.$Progress.finish();
                     })
                     .catch((error) => {
                         this.$Progress.fail();
                         console.log(error.response);
+                        this.errors = error.response.data;
                         toastr.error('The information is incorrect', '', {timeOut: 5000})
                     })
             }

@@ -10,6 +10,7 @@ import Registration from "../components/Site/auth/Registration";
 import ChangePassword from "../components/Site/partials/ChangePassword";
 import ResetPassword from "../components/Site/partials/ResetPassword";
 import Faqs from "../components/Site/partials/Faqs";
+import Profil from "../components/Site/partials/Profil";
 
 export const routes = [
     {path: '/dashboard', name: 'dashboard.index', component: Dashboard},
@@ -18,6 +19,7 @@ export const routes = [
     {path: '/change/password', name: 'site.changePassword', component: ChangePassword},
     {path: '/reset/password', name: 'site.resetPassword', component: ResetPassword},
     {path: '/', name: 'site.home', component: Home},
+    {path: '/profil', name: 'site.profil', component: Profil},
     {path: '/about', name: 'site.about', component: About},
     {path: '/contact-us', name: 'site.contact', component: Contact},
     {path: '/nos-services', name: 'site.services', component: Services},

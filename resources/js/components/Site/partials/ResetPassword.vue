@@ -1,5 +1,6 @@
 <template>
     <div>
+        <vue-progress-bar/>
         <Navbar/>
         <div class="contact block-section image-block bg-white" id="contact">
             <div class="container-fluid container-no-padding">
@@ -29,6 +30,7 @@
                                         placeholder="Insèrez votre courrier électronique"
                                         type="text"
                                         v-model="form.email">
+                                <has-error :form="form" field="username"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <button :disabled="!checkValidation" class="btn btn-lg btn-warning" type="submit">
@@ -60,9 +62,9 @@
         components: {Navbar, Footer},
         data() {
             return {
-                form: {
+                form: new Form({
                     email: '',
-                },
+                }),
                 errors: []
             };
         },
@@ -72,9 +74,17 @@
             }
         },
         methods: {
+            loadData() {
+                //
+            },
             reset() {
 
             }
+        },
+        created() {
+            this.$Progress.start();
+            this.loadData();
+            this.$Progress.finish();
         }
     }
 </script>

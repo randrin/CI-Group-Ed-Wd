@@ -169,6 +169,7 @@
 
                     this.form.reset();
                     //End Progress bar
+
                     this.$Progress.finish();
                 }).catch(() => {
                     //Failled message

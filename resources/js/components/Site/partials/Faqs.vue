@@ -86,6 +86,55 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingThree">
+                                                    <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                           href="#collapseThree" aria-expanded="true"
+                                                           aria-controls="collapseThree">
+                                                            Do you agree?
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                                     aria-labelledby="headingThree">
+                                                    <div class="panel-body">
+                                                        But I must explain to you how all this mistaken idea of
+                                                        denouncing pleasure and praising pain was born and I will give
+                                                        you a complete account of the system, and expound the actual
+                                                        teachings of the great explorer of the truth, the
+                                                        master-builder. I am so happy, my dear friend, so absorbed in
+                                                        the exquisite sense of mere tranquil existence, that I neglect
+                                                        my talents. I should be incapable of drawing a single stroke at
+                                                        the present moment; and yet I feel that I never was a greater
+                                                        artist than now.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingFour">
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                                           data-parent="#accordion" href="#collapseFour"
+                                                           aria-expanded="false" aria-controls="collapseTwo">
+                                                            What we wanna do?
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                                     aria-labelledby="headingFour">
+                                                    <div class="panel-body">
+                                                        One morning, when Gregor Samsa woke from troubled dreams, he
+                                                        found himself transformed in his bed into a horrible vermin. He
+                                                        lay on his armour-like back, and if he lifted his head a little
+                                                        he could see his brown belly. A wonderful serenity has taken
+                                                        possession of my entire soul, like these sweet mornings of
+                                                        spring which I enjoy with my whole heart. I am alone, and feel
+                                                        the charm of existence in this spot, which was created for the
+                                                        bliss of souls like mine.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -111,6 +160,7 @@
         },
         methods: {
             loadData() {
+                //
             }
         },
         created() {

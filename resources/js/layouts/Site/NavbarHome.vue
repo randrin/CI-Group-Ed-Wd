@@ -25,11 +25,11 @@
                                     <span>{{username}}</span>
                                 </div>
                                 <div class="dropdown-content">
-                                    <router-link :to="{name: 'dashboard.index' }">
+                                    <a href="/dashboard">
                                         <i class="fa fa-dashboard groupEdWd-dropdown-icon"></i>
                                         <span class="groupEdWd-dropdown-link">Dashboard</span>
-                                    </router-link>
-                                    <a href="#">
+                                    </a>
+                                    <a href="/profil">
                                         <i class="fa fa-user-circle groupEdWd-dropdown-icon"></i>
                                         <span class="groupEdWd-dropdown-link">Mon Profil</span>
                                     </a>
