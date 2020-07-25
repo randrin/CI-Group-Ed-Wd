@@ -9,18 +9,20 @@ import Error404 from "../components/Site/inc/Error404";
 import Registration from "../components/Site/auth/Registration";
 import ChangePassword from "../components/Site/partials/ChangePassword";
 import ResetPassword from "../components/Site/partials/ResetPassword";
+import Faqs from "../components/Site/partials/Faqs";
 
 export const routes = [
-    { path: '/dashboard', name: 'dashboard.index', component: Dashboard },
-    { path: '/login', name: 'site.login', component: Login },
-    { path: '/register', name: 'site.register', component: Registration },
-    { path: '/change/password', name: 'site.changePassword', component: ChangePassword },
+    {path: '/dashboard', name: 'dashboard.index', component: Dashboard},
+    {path: '/login', name: 'site.login', component: Login},
+    {path: '/register', name: 'site.register', component: Registration},
+    {path: '/change/password', name: 'site.changePassword', component: ChangePassword},
     {path: '/reset/password', name: 'site.resetPassword', component: ResetPassword},
-    { path: '/', name: 'site.home', component: Home },
-    { path: '/about', name: 'site.about', component: About },
-    { path: '/contact-us', name: 'site.contact', component: Contact },
-    { path: '/nos-services', name: 'site.services', component: Services },
-    { path: '/nos-projects', name: 'site.projects', component: Projects },
-    { path: '**', component: Error404 }
+    {path: '/', name: 'site.home', component: Home},
+    {path: '/about', name: 'site.about', component: About},
+    {path: '/contact-us', name: 'site.contact', component: Contact},
+    {path: '/nos-services', name: 'site.services', component: Services},
+    {path: '/nos-projects', name: 'site.projects', component: Projects},
+    {path: '/nos-faqs', name: 'site.faqs', component: Faqs},
+    {path: '**', component: Error404}
 ];
 

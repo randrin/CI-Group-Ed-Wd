@@ -7,5 +7,5 @@ Route::group(['namespace' => 'Site'], function () {
     Route::post('/contact-us/send', 'ContactController@send')->name('contact-message');
 
     /** Dossier Partials */
-    //require(__DIR__ . DIRECTORY_SEPARATOR . 'partials'. DIRECTORY_SEPARATOR . 'index.php');
+    require(__DIR__ . DIRECTORY_SEPARATOR . 'partials'. DIRECTORY_SEPARATOR . 'index.php');
 });
