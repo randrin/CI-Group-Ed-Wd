@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ContactRequest;
+use App\Http\Requests\Contact\StoreRequest;
 use App\Model\Contact;
 use App\Services\ContactService;
 
@@ -24,11 +24,12 @@ class ContactController extends Controller
         return view('site.contact');
     }
 
-    public function send(ContactRequest $request)
+    public function contactsend(StoreRequest $request)
     {
-        $contact = ContactService::setContactValues($request, new Contact());
-        $contact->save();
+        $contact = ContactService::setContactValues($request);
 
-        toastr()->success('<b>Bénéfice mis à jour.</b>', '<button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>');
+        ContactService::newEmailTocontact($request);
+
+        return response()->json($contact, 200);
     }
 }

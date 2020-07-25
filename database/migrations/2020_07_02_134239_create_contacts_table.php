@@ -17,16 +17,13 @@ class CreateContactsTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->text('subject')->nullable();
-            $table->longText('msg')->nullable();
+            $table->longText('message')->nullable();
             $table->string('slug')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
-            $table->integer('status')->nullable()->default('0');
+            $table->boolean('status')->default(false);
             $table->string('ip')->nullable();
-            $table->unsignedInteger('user_id')->nullable();
-            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

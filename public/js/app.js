@@ -2192,35 +2192,45 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     document.title = "Nous Contactez | ".concat(this.name_site);
     return {
-      form: {
-        contact_name: '',
-        contact_email: '',
-        contact_phone: '',
-        contact_subject: '',
-        contact_message: ''
-      },
-      errors: []
+      form: new Form({
+        name: '',
+        subject: '',
+        message: '',
+        phone: '',
+        email: ''
+      })
     };
   },
   computed: {
     checkValidation: function checkValidation() {
-      return this.form.contact_name && this.form.contact_email && this.form.contact_phone && this.form.contact_subject && this.form.contact_message ? true : false;
+      return this.form.name && this.form.subject && this.form.message && this.form.email ? true : false;
     }
   },
   methods: {
-    contact: function contact() {
+    contactItem: function contactItem() {
       var _this = this;
 
-      this.$Progress.start();
-      axios.post("/contact-us/send", this.form).then(function (response) {
-        _this.errors = [];
-        _this.form = [];
-      })["catch"](function (error) {
-        if (error) {
-          _this.errors = error.response.data.errors;
-        }
+      this.$Progress.start(); // Submit the form via a POST request
 
-        _this.$Progress.fail();
+      this.form.busy = true;
+      this.form.post('/contact-us/send').then(function () {
+        //Insertion de l'alert !
+        toastr.success('Message envoyé correctement', '', {
+          timeOut: 5000
+        }); //Fin insertion de l'alert !
+
+        _this.form.reset(); //End Progress bar
+
+
+        _this.$Progress.finish();
+      })["catch"](function () {
+        //Failled message
+        _this.$Progress.fail(); //Alert error
+
+
+        toastr.error('The information is incorrect', '', {
+          timeOut: 5000
+        });
       });
     }
   },
@@ -4698,7 +4708,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.button.button-navbar[data-v-02692978] {\r\n    color: #fff !important;\r\n    border-color: #ffa800 !important;\r\n    background-color: #ffa800 !important;\n}\r\n", ""]);
+exports.push([module.i, "\n.button.button-navbar[data-v-02692978] {\n    color: #fff !important;\n    border-color: #ffa800 !important;\n    background-color: #ffa800 !important;\n}\n", ""]);
 
 // exports
 
@@ -24277,7 +24287,10 @@ var render = function() {
                             on: {
                               submit: function($event) {
                                 $event.preventDefault()
-                                return _vm.contact($event)
+                                return _vm.contactItem()
+                              },
+                              keydown: function($event) {
+                                return _vm.form.onKeydown($event)
                               }
                             }
                           },
@@ -24295,18 +24308,18 @@ var render = function() {
                                     {
                                       name: "model",
                                       rawName: "v-model",
-                                      value: _vm.form.contact_name,
-                                      expression: "form.contact_name"
+                                      value: _vm.form.name,
+                                      expression: "form.name"
                                     }
                                   ],
                                   staticClass: "form-control form-bordered",
                                   attrs: {
                                     type: "text",
-                                    name: "contact_name",
+                                    name: "name",
                                     placeholder: "Insèrez votre nom complet",
-                                    id: "contact_name"
+                                    id: "name"
                                   },
-                                  domProps: { value: _vm.form.contact_name },
+                                  domProps: { value: _vm.form.name },
                                   on: {
                                     input: function($event) {
                                       if ($event.target.composing) {
@@ -24314,130 +24327,113 @@ var render = function() {
                                       }
                                       _vm.$set(
                                         _vm.form,
-                                        "contact_name",
+                                        "name",
                                         $event.target.value
                                       )
                                     }
                                   }
                                 }),
                                 _vm._v(" "),
-                                _vm.errors.contact_name
-                                  ? _c(
-                                      "span",
-                                      { staticClass: "groupEdWd-errors-field" },
-                                      [
-                                        _vm._v(
-                                          _vm._s(_vm.errors.contact_name[0])
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
-                              ]
+                                _c("has-error", {
+                                  attrs: { form: _vm.form, field: "name" }
+                                })
+                              ],
+                              1
                             ),
                             _vm._v(" "),
                             _c("div", { staticClass: "row padd-20-btm" }, [
                               _c("div", { staticClass: "col-sm-6" }, [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _vm._m(5),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.contact_email,
-                                        expression: "form.contact_email"
-                                      }
-                                    ],
-                                    staticClass: "form-control form-bordered",
-                                    attrs: {
-                                      type: "email",
-                                      name: "contact_email",
-                                      placeholder:
-                                        "Insèrez votre courier électronique",
-                                      id: "contact_email"
-                                    },
-                                    domProps: { value: _vm.form.contact_email },
-                                    on: {
-                                      input: function($event) {
-                                        if ($event.target.composing) {
-                                          return
-                                        }
-                                        _vm.$set(
-                                          _vm.form,
-                                          "contact_email",
-                                          $event.target.value
-                                        )
-                                      }
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _vm.errors.contact_email
-                                    ? _c(
-                                        "span",
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group" },
+                                  [
+                                    _vm._m(5),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      directives: [
                                         {
-                                          staticClass: "groupEdWd-errors-field"
-                                        },
-                                        [
-                                          _vm._v(
-                                            _vm._s(_vm.errors.contact_email[0])
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.form.email,
+                                          expression: "form.email"
+                                        }
+                                      ],
+                                      staticClass: "form-control form-bordered",
+                                      attrs: {
+                                        type: "email",
+                                        name: "email",
+                                        placeholder:
+                                          "Insèrez votre courier électronique",
+                                        id: "email"
+                                      },
+                                      domProps: { value: _vm.form.email },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.form,
+                                            "email",
+                                            $event.target.value
                                           )
-                                        ]
-                                      )
-                                    : _vm._e()
-                                ])
+                                        }
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("has-error", {
+                                      attrs: { form: _vm.form, field: "email" }
+                                    })
+                                  ],
+                                  1
+                                )
                               ]),
                               _vm._v(" "),
                               _c("div", { staticClass: "col-sm-6" }, [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _vm._m(6),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.contact_phone,
-                                        expression: "form.contact_phone"
-                                      }
-                                    ],
-                                    staticClass: "form-control form-bordered",
-                                    attrs: {
-                                      type: "number",
-                                      name: "contact_phone",
-                                      placeholder:
-                                        "Insèrez votre numèro de télephone",
-                                      id: "contact_phone"
-                                    },
-                                    domProps: { value: _vm.form.contact_phone },
-                                    on: {
-                                      input: function($event) {
-                                        if ($event.target.composing) {
-                                          return
-                                        }
-                                        _vm.$set(
-                                          _vm.form,
-                                          "contact_phone",
-                                          $event.target.value
-                                        )
-                                      }
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _vm.errors.contact_phone
-                                    ? _c(
-                                        "span",
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group" },
+                                  [
+                                    _vm._m(6),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      directives: [
                                         {
-                                          staticClass: "groupEdWd-errors-field"
-                                        },
-                                        [
-                                          _vm._v(
-                                            _vm._s(_vm.errors.contact_phone[0])
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.form.phone,
+                                          expression: "form.phone"
+                                        }
+                                      ],
+                                      staticClass: "form-control form-bordered",
+                                      attrs: {
+                                        type: "number",
+                                        name: "phone",
+                                        placeholder:
+                                          "Insèrez votre numèro de télephone",
+                                        id: "phone"
+                                      },
+                                      domProps: { value: _vm.form.phone },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.form,
+                                            "phone",
+                                            $event.target.value
                                           )
-                                        ]
-                                      )
-                                    : _vm._e()
-                                ])
+                                        }
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("has-error", {
+                                      attrs: { form: _vm.form, field: "phone" }
+                                    })
+                                  ],
+                                  1
+                                )
                               ])
                             ]),
                             _vm._v(" "),
@@ -24452,19 +24448,19 @@ var render = function() {
                                     {
                                       name: "model",
                                       rawName: "v-model",
-                                      value: _vm.form.contact_subject,
-                                      expression: "form.contact_subject"
+                                      value: _vm.form.subject,
+                                      expression: "form.subject"
                                     }
                                   ],
                                   staticClass: "form-control form-bordered",
                                   attrs: {
                                     type: "text",
-                                    name: "contact_subject",
+                                    name: "subject",
                                     placeholder:
                                       "Insèrez votre sujet de contact",
-                                    id: "contact_subject"
+                                    id: "subject"
                                   },
-                                  domProps: { value: _vm.form.contact_subject },
+                                  domProps: { value: _vm.form.subject },
                                   on: {
                                     input: function($event) {
                                       if ($event.target.composing) {
@@ -24472,25 +24468,18 @@ var render = function() {
                                       }
                                       _vm.$set(
                                         _vm.form,
-                                        "contact_subject",
+                                        "subject",
                                         $event.target.value
                                       )
                                     }
                                   }
                                 }),
                                 _vm._v(" "),
-                                _vm.errors.contact_subject
-                                  ? _c(
-                                      "span",
-                                      { staticClass: "groupEdWd-errors-field" },
-                                      [
-                                        _vm._v(
-                                          _vm._s(_vm.errors.contact_subject[0])
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
-                              ]
+                                _c("has-error", {
+                                  attrs: { form: _vm.form, field: "subject" }
+                                })
+                              ],
+                              1
                             ),
                             _vm._v(" "),
                             _c(
@@ -24504,18 +24493,18 @@ var render = function() {
                                     {
                                       name: "model",
                                       rawName: "v-model",
-                                      value: _vm.form.contact_message,
-                                      expression: "form.contact_message"
+                                      value: _vm.form.message,
+                                      expression: "form.message"
                                     }
                                   ],
                                   staticClass: "form-control form-bordered",
                                   attrs: {
                                     rows: "6",
-                                    name: "contact_message",
+                                    name: "message",
                                     placeholder: "Insèrez votre message",
-                                    id: "contact_message"
+                                    id: "message"
                                   },
-                                  domProps: { value: _vm.form.contact_message },
+                                  domProps: { value: _vm.form.message },
                                   on: {
                                     input: function($event) {
                                       if ($event.target.composing) {
@@ -24523,25 +24512,18 @@ var render = function() {
                                       }
                                       _vm.$set(
                                         _vm.form,
-                                        "contact_message",
+                                        "message",
                                         $event.target.value
                                       )
                                     }
                                   }
                                 }),
                                 _vm._v(" "),
-                                _vm.errors.contact_message
-                                  ? _c(
-                                      "span",
-                                      { staticClass: "groupEdWd-errors-field" },
-                                      [
-                                        _vm._v(
-                                          _vm._s(_vm.errors.contact_message[0])
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
-                              ]
+                                _c("has-error", {
+                                  attrs: { form: _vm.form, field: "message" }
+                                })
+                              ],
+                              1
                             ),
                             _vm._v(" "),
                             _c(
@@ -24554,7 +24536,8 @@ var render = function() {
                                     staticClass: "btn btn-lg btn-warning",
                                     attrs: {
                                       type: "submit",
-                                      disabled: !_vm.checkValidation
+                                      disabled:
+                                        !_vm.checkValidation || _vm.form.busy
                                     }
                                   },
                                   [
@@ -24677,7 +24660,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "contact_name" } }, [
+    return _c("label", { attrs: { for: "name" } }, [
       _vm._v("Nom et Prènom "),
       _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
     ])
@@ -24686,33 +24669,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "label",
-      { staticClass: "form-label", attrs: { for: "contact_email" } },
-      [
-        _vm._v("Addresse e-mail "),
-        _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
-      ]
-    )
+    return _c("label", { staticClass: "form-label", attrs: { for: "email" } }, [
+      _vm._v("Addresse e-mail "),
+      _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "label",
-      { staticClass: "form-label", attrs: { for: "contact_phone" } },
-      [
-        _vm._v("Numero de Télephone "),
-        _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
-      ]
-    )
+    return _c("label", { staticClass: "form-label", attrs: { for: "phone" } }, [
+      _vm._v("Numero de Télephone "),
+      _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "contact_subject" } }, [
+    return _c("label", { attrs: { for: "subject" } }, [
       _vm._v("Suject Message "),
       _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
     ])
@@ -24723,7 +24698,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "form-label", attrs: { for: "contact_message" } },
+      { staticClass: "form-label", attrs: { for: "message" } },
       [
         _vm._v("Message "),
         _c("span", { staticClass: "groupEdWd-required" }, [_vm._v("*")])
@@ -47542,8 +47517,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\nzeuk\OneDrive\Documents\group-ed-wd\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\nzeuk\OneDrive\Documents\group-ed-wd\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/boclairtemgoua/sites/projet/group-ed-wd/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/boclairtemgoua/sites/projet/group-ed-wd/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
