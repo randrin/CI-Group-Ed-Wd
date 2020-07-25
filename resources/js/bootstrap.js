@@ -16,6 +16,7 @@ window.Vue = require('vue');
 
 
 Vue.prototype.name_site = window.user.name_site;
+Vue.prototype.url_site = window.user.url_site;
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

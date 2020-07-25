@@ -22,7 +22,7 @@
                                 <label for="name">Nom et Prènom <span class="groupEdWd-required">*</span></label>
                                 <input type="text" v-model="form.name" name="name" class="form-control form-bordered"
                                        placeholder="Insèrez votre nom complet" id="name">
-                                <has-error :form="form" field="name"/>
+                                <has-error :form="form" class="groupEdWd-required" field="name"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="username">Username <span class="groupEdWd-required">*</span></label>
@@ -81,11 +81,12 @@
     import Navbar from "../../../layouts/Site/Navbar";
     import Footer from "../../../layouts/Site/Footer";
 
+    import Swal from "sweetalert2";
     export default {
         name: "Registration",
         components: {Footer, Navbar},
         data() {
-            //document.title = `Inscription | ${this.name_site}`;
+            document.title = `${this.name_site} Inscription | ${this.name_site}`;
             return {
                 form: new Form({
                     name: '',
@@ -124,17 +125,27 @@
                 this.form.busy = true;
                 this.form.post('register')
                     .then((response) => {
-                        console.log(response)
+
+                       Swal.fire({
+                            title: "Bien joué",
+                            text: "Votre compte à bien été crée veillz verifier votre boite mail pour confirmer votre compte",
+                            icon: "success",
+                            buttonsStyling: false,
+                            confirmButtonClass: "btn btn-success",
+                            confirmButtonText: 'Compris !',
+                            showCancelButton: false,
+                        });
+
+                    this.$router.push('/');
+
+                    this.form.reset();
+                    //End Progress bar
+                    this.$Progress.finish();
+
                     }).catch((error) => {
                     this.$Progress.fail();
                     console.log(error.response);
-                    $.notify("Ooop! Something wrong. Try later", {
-                        type: 'danger',
-                        animate: {
-                            enter: 'animated bounceInDown',
-                            exit: 'animated bounceOutUp'
-                        }
-                    });
+                     toastr.error('The information is incorrect', '', {timeOut: 5000});
                 })
             }
         }

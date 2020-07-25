@@ -59,7 +59,7 @@
                                                name="name"
                                                placeholder="Insèrez votre nom complet"
                                                id="name">
-                                           <has-error :form="form" field="name"/>
+                                           <has-error :form="form" class="groupEdWd-required" field="name"/>
                                     </div>
                                     <div class="row padd-20-btm">
                                         <div class="col-sm-6">
@@ -72,7 +72,7 @@
                                                        name="email"
                                                        placeholder="Insèrez votre courier électronique"
                                                        id="email">
-                                                   <has-error :form="form" field="email"/>
+                                                   <has-error :form="form" class="groupEdWd-required" field="email"/>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -85,7 +85,7 @@
                                                        name="phone"
                                                        placeholder="Insèrez votre numèro de télephone"
                                                        id="phone">
-                                                <has-error :form="form" field="phone"/>
+                                                <has-error :form="form" class="groupEdWd-required" field="phone"/>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                                name="subject"
                                                placeholder="Insèrez votre sujet de contact"
                                                id="subject">
-                                        <has-error :form="form" field="subject"/>
+                                        <has-error :form="form" class="groupEdWd-required" field="subject"/>
                                     </div>
                                     <div class="form-group padd-20-btm">
                                         <label for="message" class="form-label">Message <span
@@ -110,7 +110,7 @@
                                                   placeholder="Insèrez votre message"
                                                   id="message">
                                         </textarea>
-                                        <has-error :form="form" field="message"/>
+                                        <has-error :form="form" class="groupEdWd-required" field="message"/>
                                     </div>
                                     <div class="form-group padd-20-btm">
                                         <button type="submit" :disabled="!checkValidation || form.busy"

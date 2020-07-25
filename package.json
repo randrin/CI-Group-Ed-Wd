@@ -28,7 +28,7 @@
     "dependencies": {
         "animate.css": "^3.7.2",
         "select2": "^4.0.12",
-        "sweetalert2": "^9.3.1",
+        "sweetalert2": "^9.17.0",
         "toastr": "^2.1.4",
         "vform": "^1.0.1",
         "vue-progressbar": "^0.7.5"

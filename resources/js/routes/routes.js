@@ -18,6 +18,7 @@ export const routes = [
     {path: '/change/password', name: 'site.changePassword', component: ChangePassword},
     {path: '/reset/password', name: 'site.resetPassword', component: ResetPassword},
     {path: '/', name: 'site.home', component: Home},
+    {path: '/home', name: 'site.home', component: Home},
     {path: '/about', name: 'site.about', component: About},
     {path: '/contact-us', name: 'site.contact', component: Contact},
     {path: '/nos-services', name: 'site.services', component: Services},
