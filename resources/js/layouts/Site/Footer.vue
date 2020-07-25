@@ -18,7 +18,7 @@
                                 <li><a href="/nos-services">Nos Expertises</a></li>
                                 <li><a href="/nos-projects">Nos Projects</a></li>
                                 <li><a href="/blogs">Notre Blog</a></li>
-                                <li><a href="/faqs">Faqs</a></li>
+                                <li><a href="/nos-faqs">Faqs</a></li>
                             </ul>
                         </section>
                     </div>
