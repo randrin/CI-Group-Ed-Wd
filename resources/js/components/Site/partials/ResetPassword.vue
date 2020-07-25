@@ -20,17 +20,16 @@
                         <p class="padd-20-btm padd-60-top">Saisissez l'adresse mail que vous nous avez indiquée lors de
                             votre inscription,
                             afin de recevoir un lien de réinitialisation de votre mot de passe. </p>
-                        <form @submit.prevent="reset" class="contact-form">
+                        <form @submit.prevent="reset()" class="contact-form">
                             <div class="form-group padd-20-btm">
                                 <label for="email">Adresse Email <span class="groupEdWd-required">*</span></label>
-                                <input
-                                        class="form-control form-bordered"
+                                <input class="form-control form-bordered"
                                         id="email"
                                         name="email"
                                         placeholder="Insèrez votre courrier électronique"
-                                        type="text"
+                                        type="email"
                                         v-model="form.email">
-                                <has-error :form="form" field="username"/>
+                                <has-error :form="form" field="email"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <button :disabled="!checkValidation" class="btn btn-lg btn-warning" type="submit">
@@ -57,6 +56,7 @@
     import Footer from "../../../layouts/Site/Footer";
     import Navbar from "../../../layouts/Site/Navbar";
 
+    import Swal from "sweetalert2";
     export default {
         name: "ResetPassword",
         components: {Navbar, Footer},
@@ -78,7 +78,34 @@
                 //
             },
             reset() {
+                 this.$Progress.start();
+                // Submit the form via a POST request
+                this.form.busy = true;
+                this.form.post('/password/email')
+                .then(() => {
+                    //Insertion de l'alert !
+                      Swal.fire({
+                        text: "We have emailed you the reset password link",
+                        icon: 'success',
+                        footer: '<a href="/login">You remember your password?</a>',
+                        buttonsStyling: false,
+                        confirmButtonClass: "btn btn-info",
+                        confirmButtonText: 'Ok, understood',
+                        reverseButtons: true,
+                    });
 
+                    //Fin insertion de l'alert !
+
+                    this.form.reset();
+                    //End Progress bar
+
+                    this.$Progress.finish();
+                }).catch(() => {
+                    //Failled message
+                    this.$Progress.fail();
+                    //Alert error
+                   toastr.error('The information is incorrect', '', {timeOut: 5000});
+                })
             }
         },
         created() {
