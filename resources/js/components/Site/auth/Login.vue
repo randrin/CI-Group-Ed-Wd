@@ -23,7 +23,7 @@
                                 <input type="text" v-model="form.username" name="username"
                                        placeholder="Votre Pseudo" class="form-control form-bordered"
                                        id="username">
-                                <has-error :form="form" field="username"/>
+                                <has-error :form="form" field="username" class="groupEdWd-required"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="password">Mot De Passe <span class="groupEdWd-required">*</span></label>
@@ -33,7 +33,7 @@
                                 <div @click="showRidePwd" class="groupEdWd-container-show-ride-pwd">
                                     <i :class="getPasswordIcon()"></i>
                                 </div>
-                                <has-error :form="form" field="password"/>
+                                <has-error :form="form" field="password" class="groupEdWd-required"/>
                                 <p class="text-right">
                                     <router-link :to="{ name: 'site.resetPassword' }">
                                         <span>J'ai oublié mon mot de passe</span>
