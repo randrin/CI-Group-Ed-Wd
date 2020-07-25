@@ -15,7 +15,9 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
 <script src="/assets/site/js/script.min.js"></script>
 <!-- Sweet Alert 2 plugin -->
+<!--
 <script src="/assets/js/plugins/sweetalert2.js"></script>
+-->
 <script src="/assets/js/plugins/toastr.min.js"></script>
 <script src="/assets/js/plugins/zoom.min.js"></script>
 <script src="/assets/js/plugins/bootstrap-notify.js"></script>

@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h2 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Modification Mot de Passe</h2>
-                    <form @keydown="form.onKeydown($event)" @submit.prevent="changePassword" class="contact-form">
+                    <form @keydown="form.onKeydown($event)" @submit.prevent="changePassword()" class="contact-form">
                         <div class="form-group padd-20-btm">
                             <label for="old_password">Mot de Passe Actuel <span
                                     class="groupEdWd-required">*</span></label>
@@ -19,7 +19,7 @@
                             <div @click="showRidePwd" class="groupEdWd-container-show-ride-pwd">
                                 <i :class="getPasswordIcon()"></i>
                             </div>
-                            <has-error :form="form" field="old_password"/>
+                            <has-error :form="form" class="groupEdWd-required" field="old_password"/>
                         </div>
                         <div class="form-group padd-20-btm">
                             <label for="password">Nouveau Mot de Passe <span
@@ -34,7 +34,7 @@
                             <div @click="showRideConfirmationPwd" class="groupEdWd-container-show-ride-pwd">
                                 <i :class="getConfirmationPasswordIcon()"></i>
                             </div>
-                            <has-error :form="form" field="password"/>
+                            <has-error :form="form" class="groupEdWd-required" field="password"/>
                         </div>
                         <div class="form-group padd-20-btm">
                             <label for="password_confirmation">Confirmation Mot de Passe <span
@@ -49,10 +49,10 @@
                             <div @click="showRideConfirmationPwd" class="groupEdWd-container-show-ride-pwd">
                                 <i :class="getConfirmationPasswordIcon()"></i>
                             </div>
-                            <has-error :form="form" field="password_confirmation"/>
+                            <has-error :form="form" class="groupEdWd-required" field="password_confirmation"/>
                         </div>
                         <div class="form-group padd-40-btm">
-                            <button type="submit" :disabled="!checkValidation" class="btn btn-lg btn-warning">
+                            <button type="submit" :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning">
                                 <span class="font-weight-bold">Modifier</span>
                                 <i class="fa fa-long-arrow-right"></i>
                             </button>
@@ -105,7 +105,9 @@
                 return (this.password_confirmationType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash');
             },
             changePassword() {
-                axios.post('/change_password', this.form)
+                this.$Progress.start();
+                this.form.busy = true;
+                this.form.post('/change_password', this.form)
                     .then((res) => {
                         console.log('response: ', res);
                         //Insertion de l'alert !
@@ -126,7 +128,10 @@
                         }, 2000);
                         //Fin insertion de l'alert !
 
-                        this.form.reset();
+                       window.location.href = `/login`;
+                       
+                       this.$Progress.finish();
+
                     }).catch((error) => {
                     this.errors = error.response.data;
                     console.log(this.errors);

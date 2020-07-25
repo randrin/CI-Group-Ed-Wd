@@ -20,6 +20,7 @@ export const routes = [
     {path: '/reset/password', name: 'site.resetPassword', component: ResetPassword},
     {path: '/', name: 'site.home', component: Home},
     {path: '/profil', name: 'site.profil', component: Profil},
+    {path: '/home', name: 'site.home', component: Home},
     {path: '/about', name: 'site.about', component: About},
     {path: '/contact-us', name: 'site.contact', component: Contact},
     {path: '/nos-services', name: 'site.services', component: Services},

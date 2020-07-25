@@ -111,9 +111,8 @@
                                 'message': '<strong>Welcome back.</strong>',
                                 'progress': 75
                             });
-                            this.$router.push('/');
-                            location.reload(); // Pour faire le refresh de la page, changer le javascript
-                            //location.reload(true);
+                            window.location.href = `/`
+                            
                         }, 2000);
                         this.$Progress.finish();
                     })

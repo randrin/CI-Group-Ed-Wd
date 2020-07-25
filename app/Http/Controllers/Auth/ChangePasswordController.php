@@ -8,6 +8,8 @@ use App\Model\user;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class ChangePasswordController extends Controller
 {
@@ -37,6 +39,8 @@ class ChangePasswordController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
         Auth::logout();
-        return redirect()->route('login');
+
+        return response('Confirmed',Response::HTTP_ACCEPTED);
     }
+    
 }

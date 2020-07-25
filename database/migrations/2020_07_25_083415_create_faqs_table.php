@@ -20,6 +20,8 @@ class CreateFaqsTable extends Migration
             $table->string('ip')->nullable();
             $table->string('slug')->nullable();
             $table->boolean('status')->default(false);
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
