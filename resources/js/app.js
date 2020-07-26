@@ -5,15 +5,22 @@
  */
 
 import { routes } from "./routes/routes";
-import VueRouter from 'vue-router'
-import { AlertError, AlertSuccess, Form, HasError } from 'vform'
+import VueRouter from 'vue-router';
+import Vue2Filters from 'vue2-filters';
+import moment from 'moment';
+import VueCrypt from 'vue-crypt';
+import { AlertError, AlertSuccess, Form, HasError } from 'vform';
 import VueProgressBar from 'vue-progressbar';
 
 require('./bootstrap');
+require("moment/min/locales.min");
+moment.locale('fr');
 
 window.Vue = require('vue');
 
 Vue.use(VueRouter);
+Vue.use(Vue2Filters);
+Vue.use(VueCrypt);
 
 const router = new VueRouter({
     routes,
@@ -21,6 +28,47 @@ const router = new VueRouter({
     linkActiveClass: "active"
 });
 
+Vue.filter('myDate', function (created) {
+    return moment(created).format('ll');
+});
+
+Vue.filter('ageDate', function (created) {
+    return moment(created).format('l');
+});
+
+Vue.filter('formatDate', function (value) {
+    if (value) {
+        return moment(String(value)).format('DD/MM/YYYY');
+    }
+});
+
+Vue.filter('formatDateAndHour', function (value) {
+    if (value) {
+        return moment(String(value)).format('DD/MM/YYYY HH:mm:ss');
+    }
+});
+
+Vue.filter('dateFormat', function (created) {
+    return moment(created).format('lll'); // mars 2 2019, 12:32:56 pm
+});
+
+Vue.filter('dateAgo', function (created) {
+    return moment(created).fromNow(); // date ago
+});
+
+Vue.filter('dateCalendar', function (created) {
+    return moment(created).calendar();  // Today at 4:39 PM
+});
+
+Vue.filter('toCurrency', function (value) {
+    if (typeof value !== "number") {
+        return value;
+    }
+    var formatter = new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: 0
+    });
+    return formatter.format(value);
+});
 
 window.Form = Form;
 

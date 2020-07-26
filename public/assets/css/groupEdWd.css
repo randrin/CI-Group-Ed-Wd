@@ -1,3 +1,8 @@
+/*** Configuration Site ***/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: #636660;
     border-radius: 20px;
@@ -129,4 +134,21 @@
 .groupEdWd-required,
 .groupEdWd-errors-field {
     color: #d12420;
+}
+
+
+/*** Profil ***/
+.groupEdWd-profil-img {
+    margin-right: 15px;
+    max-width: 100px;
+    height: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.groupEdWd-profil-section {
+    background: #ffa800;
 }

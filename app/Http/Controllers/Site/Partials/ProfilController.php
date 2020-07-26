@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site\Partials;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProfilResource;
 use App\Model\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -25,7 +26,7 @@ class ProfilController extends Controller
      */
     public function index($username)
     {
-        $user = User::where('username', $username)->first();
+        $user = new ProfilResource(User::where('username', $username)->first());
         //return view('site.partials.profil.index', compact('user'));
         return response()->json($user, 200);
     }
