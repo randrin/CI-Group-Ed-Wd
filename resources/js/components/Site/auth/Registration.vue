@@ -16,20 +16,37 @@
             <div class="container clear">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
-                        <h3 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Bienvenue sur la Page de Registration</h3>
-                        <form @submit.prevent="register()"  @keydown="form.onKeydown($event)" class="contact-form">
-                            <div class="form-group padd-20-btm">
-                                <label for="name">Nom et Prènom <span class="groupEdWd-required">*</span></label>
-                                <input type="text" v-model="form.name" name="name" class="form-control form-bordered"
-                                       placeholder="Insèrez votre nom complet" id="name">
-                                <has-error :form="form" class="groupEdWd-required" field="name"/>
+                        <h3 class="text-center padd-20-btm padd-60-top groupEdWd-red-color">Bienvenue sur la Page de
+                            Registration</h3>
+                        <form @keydown="form.onKeydown($event)" @submit.prevent="register()" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group padd-20-btm">
+                                        <label for="sex">Civilité <span class="groupEdWd-required">*</span></label>
+                                        <select class="form-control form-bordered" id="sex" v-model="form.sex">
+                                            <option disabled hidden selected value="">Je suis ...</option>
+                                            <option value="Male">Un Homme</option>
+                                            <option value="Female">Un Femme</option>
+                                        </select>
+                                        <has-error :form="form" class="groupEdWd-required" field="sex"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group padd-20-btm">
+                                        <label for="username">Username <span class="groupEdWd-required">*</span></label>
+                                        <input class="form-control form-bordered" id="username" name="username"
+                                               placeholder="Insèrez votre Pseudo" type="text"
+                                               v-model="form.username">
+                                        <has-error :form="form" class="groupEdWd-required" field="username"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="username">Username <span class="groupEdWd-required">*</span></label>
-                                <input type="text" v-model="form.username" name="username"
-                                       class="form-control form-bordered" placeholder="Insèrez votre Pseudo"
-                                       id="username">
-                                <has-error :form="form" class="groupEdWd-required" field="username"/>
+                                <label for="name">Nom et Prènom <span class="groupEdWd-required">*</span></label>
+                                <input class="form-control form-bordered" id="name" name="name"
+                                       placeholder="Insèrez votre nom complet"
+                                       type="text" v-model="form.name">
+                                <has-error :form="form" class="groupEdWd-required" field="name"/>
                             </div>
                             <div class="form-group padd-20-btm">
                                 <label for="email">Adresse Email <span class="groupEdWd-required">*</span></label>
@@ -48,7 +65,8 @@
                                 <has-error :form="form" class="groupEdWd-required" field="password"/>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <label for="password_confirmation">Confirmation Mot De Passe <span class="groupEdWd-required">*</span></label>
+                                <label for="password_confirmation">Confirmation Mot De Passe <span
+                                        class="groupEdWd-required">*</span></label>
                                 <input :type="password_confirmationType" name="password_confirmation"
                                        v-model="form.password_confirmation"
                                        class="form-control form-bordered" placeholder="Confirmez votre mot de passe"
@@ -59,7 +77,8 @@
                                 <has-error :form="form" class="groupEdWd-required" field="password_confirmation"/>
                             </div>
                             <div class="form-group padd-20-btm">
-                                <button type="submit" :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning">
+                                <button :disabled="!checkValidation || form.busy" class="btn btn-lg btn-warning"
+                                        type="submit">
                                     <span class="font-weight-bold">S' Enregistrer</span>
                                     <i class="fa fa-long-arrow-right"></i>
                                 </button>
@@ -82,6 +101,7 @@
     import Footer from "../../../layouts/Site/Footer";
 
     import Swal from "sweetalert2";
+
     export default {
         name: "Registration",
         components: {Footer, Navbar},
@@ -91,6 +111,7 @@
                 form: new Form({
                     name: '',
                     username: '',
+                    sex: '',
                     email: '',
                     password: '',
                     password_confirmation: ''
@@ -102,7 +123,7 @@
         computed: {
             checkValidation() {
                 return (this.form.name && this.form.username && this.form.email
-                    && this.form.password && this.form.password_confirmation) ? true : false;
+                    && this.form.password && this.form.password_confirmation && this.form.sex) ? true : false;
             }
         },
         methods: {
@@ -121,12 +142,12 @@
                 return (this.password_confirmationType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash');
             },
             register() {
+                //Start Progress Bar
                 this.$Progress.start();
                 this.form.busy = true;
                 this.form.post('register')
                     .then((response) => {
-
-                       Swal.fire({
+                        Swal.fire({
                             title: "Bien joué",
                             text: "Votre compte à bien été crée veillz verifier votre boite mail pour confirmer votre compte",
                             icon: "success",
@@ -135,17 +156,16 @@
                             confirmButtonText: 'Compris !',
                             showCancelButton: false,
                         });
-
-                    this.$router.push('/');
-
-                    this.form.reset();
-                    //End Progress bar
-                    this.$Progress.finish();
-
+                        setTimeout(() => {
+                            window.location.href = `/`
+                        }, 1000);
+                        this.form.reset();
+                        //End Progress Bar
+                        this.$Progress.finish();
                     }).catch((error) => {
                     this.$Progress.fail();
                     console.log(error.response);
-                     toastr.error('The information is incorrect', '', {timeOut: 5000});
+                    toastr.error('The information is incorrect', '', {timeOut: 5000});
                 })
             }
         }

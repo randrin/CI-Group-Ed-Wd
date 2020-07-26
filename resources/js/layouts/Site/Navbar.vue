@@ -24,14 +24,14 @@
                                     <span>{{username}}</span>
                                 </div>
                                 <div class="dropdown-content">
-                                    <a href="/dashboard">
+                                    <router-link :to="{ path: '/dashboard' }">
                                         <i class="fa fa-dashboard groupEdWd-dropdown-icon"></i>
                                         <span class="groupEdWd-dropdown-link">Dashboard</span>
-                                    </a>
-                                    <a href="/profil">
+                                    </router-link>
+                                    <router-link :to="{name: 'site.profil', params: {username: username}}">
                                         <i class="fa fa-user-circle groupEdWd-dropdown-icon"></i>
                                         <span class="groupEdWd-dropdown-link">Mon Profil</span>
-                                    </a>
+                                    </router-link>
                                     <a href="#">Link 3</a>
                                     <a href="/user/logout">
                                         <i class="fa fa-sign-out groupEdWd-dropdown-icon"></i>

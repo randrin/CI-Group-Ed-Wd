@@ -62,11 +62,9 @@
     export default {
         name: "About",
         components: {Expertise, Navbar, Footer, Team, Expertise},
-        data(){
+        data() {
             document.title = `À propos de nous | ${this.name_site}`;
-            return {
-
-            }
+            return {}
         },
         methods: {
             loadData() {

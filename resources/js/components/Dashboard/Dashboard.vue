@@ -18,7 +18,7 @@
         name: "Dashboard",
         components: {NavTop, Navbar, Footer},
         data() {
-
+            return {}
         },
         methods: {
             loadData() {

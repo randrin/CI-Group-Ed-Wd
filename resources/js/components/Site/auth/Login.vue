@@ -111,14 +111,15 @@
                                 'message': '<strong>Welcome back.</strong>',
                                 'progress': 75
                             });
-                            window.location.href = `/`
-                            
+                            setTimeout(() => {
+                                window.location.href = `/`
+                            }, 1000);
                         }, 2000);
                         this.$Progress.finish();
                     })
                     .catch((error) => {
                         this.$Progress.fail();
-                        console.log(error.response);
+                        console.log(error.response.data.errors.email);
                         this.errors = error.response.data;
                         toastr.error('The information is incorrect', '', {timeOut: 5000})
                     })

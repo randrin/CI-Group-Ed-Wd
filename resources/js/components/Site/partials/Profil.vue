@@ -30,16 +30,18 @@
         },
         methods: {
             loadData() {
-                axios.get('/profil')
+                //console.log($route.params.username)
+                axios.get('/profil/randrino17')
                     .then((response) => {
                         this.user = response.data;
-                        console.log('User: ', response.data);
+                        console.log('User: ', response);
                     })
                     .catch((error) => {
                         this.errors = error.response.data;
                     })
             }
-        },
+        }
+        ,
         created() {
             this.$Progress.start();
             this.loadData();
